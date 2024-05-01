@@ -7,8 +7,8 @@ const Lauantai = () => {
       { id: 1, time: '10:00', team1: 'Wolf Musta', team2: 'Salamat White', result1: 3, result2: 0 },
       { id: 2, time: '10:40', team1: 'Hunters Blue', team2: 'HJK Blue', result1: 2, result2: 5 },
       { id: 3, time: '11:20', team1: 'Wolf Musta', team2: 'Hunters Blue', result1: 6, result2: 5 },
-      { id: 4, time: '12:10', team1: 'Salamat White', team2: 'HJK Blue', result1: 0, result2: 0 },
-      { id: 5, time: '12:50', team1: 'Wolf Musta', team2: 'HJK Blue', result1: 0, result2: 0 },
+      { id: 4, time: '12:10', team1: 'Salamat White', team2: 'HJK Blue', result1: 5, result2: 5 },
+      { id: 5, time: '12:50', team1: 'Wolf Musta', team2: 'HJK Blue', result1: 4, result2: 1 },
       { id: 6, time: '13:40', team1: 'Salamat White', team2: 'Hunters Blue', result1: 0, result2: 0 }
     ],
     u8lohkob: [

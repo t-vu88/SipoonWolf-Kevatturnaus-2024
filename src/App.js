@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Tab from './components/tab';
 import Content from './components/content';
 
 function App() {
+  const [currentTab, setCurrentTab] = useState('lauantai');
+
   return (
     <Router>
       <div className="App">
@@ -28,3 +30,4 @@ function App() {
 }
 
 export default App;
+

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Tab from './components/tab';
 import Content from './components/content';
 
@@ -16,7 +16,7 @@ function App() {
         </header>
         <div className="content-container">
           <div className="tabs">
-            <Tab label="Lauantai 18.05.24" tabName="lauantai" />
+          <Tab label="Lauantai 18.05.24" tabName="lauantai" currentTab={currentTab} setCurrentTab={setCurrentTab} />
             <Tab label="Sunnuntai 19.05.24" tabName="sunnuntai" />
             <Tab label="Pukukopit" tabName="pukukopit" />
             <Tab label="Ruokailu" tabName="ruokailu" />
@@ -27,7 +27,7 @@ function App() {
       </div>
     </Router>
   );
-}
+};
 
 export default App;
 

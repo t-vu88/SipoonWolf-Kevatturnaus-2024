@@ -15,7 +15,8 @@ function App() {
           <div className="logo-container">
             <img src={logo} alt="Logo" className="logo" /> {/* Render the logo */}
             <div className="title">
-              <p>Sipoon Wolf U7 & U8</p>
+              <p>Sipoon Wolf </p>
+              <p> U7 & U8</p>
               <p>Kevätturnaus 2024</p>
             </div>
           

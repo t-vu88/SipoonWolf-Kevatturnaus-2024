@@ -146,7 +146,7 @@ const Lauantai = () => {
           </div>
 
           <div>
-            <h3>Otteluohjelma</h3>
+            <h3> Otteluohjelma</h3>
           </div>
           <div className="game-container">
             {games[groupId].map((game) => (

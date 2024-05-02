@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Lauantai = () => {
-  // Define the normal games
   const games = {
     u8lohkoa: [
       { id: 1, time: '10:00', team1: 'Wolf Musta', team2: 'Salamat White', result1: 0, result2: 0 },

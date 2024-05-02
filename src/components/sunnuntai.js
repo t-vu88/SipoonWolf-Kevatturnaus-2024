@@ -24,14 +24,14 @@ const Sunnuntai = () => {
       { id: 2, time: '10:40', team1: 'HIFK White', team2: 'HIFK Blue', result1: 0, result2: 0 },
       { id: 3, time: '11:20', team1: 'Wolf', team2: 'HIFK White', result1: 0, result2: 0 },
       { id: 4, time: '12:10', team1: 'Haki White', team2: 'HIFK Blue', result1: 0, result2: 0 },
-      { id: 5, time: '12:50', team1: 'Wolf ', team2: 'HIFK Blue', result1: 0, result2: 0 },
+      { id: 5, time: '12:50', team1: 'Wolf', team2: 'HIFK Blue', result1: 0, result2: 0 },
       { id: 6, time: '13:40', team1: 'Haki White', team2: 'HIFK White', result1: 0, result2: 0 },
       
     ]
 };
 
 const teams = {
-  u8lohkoa: ["Woft Musta", "HIFK Red", "HJK Black", "Viikingit Red"],
+  u8lohkoa: ["Wolf Musta", "HIFK Red", "HJK Black", "Viikingit Red"],
   u8lohkob: ["Wolf Keltainen", "HIFK White", "HJK Blue", "Viikingit White"],
   u7: ["Wolf", "Haki White", "HIFK White", "HIFK Blue"]
 };
@@ -42,6 +42,10 @@ const quarterFinalsGames = [
   { time: "15:10", team1: '', team2: '', result1: 0, result2: 0 },
   { time: "15:10", team1: '', team2: '', result1: 0, result2: 0 },
   ];
+  const quarterFinalsGamesU7 = [
+    { time: "14:20", team1: '', team2: '', result1: 0, result2: 0 },
+    { time: "15:10", team1: '', team2: '', result1: 0, result2: 0 },
+    ];
 
   const formatGroupName = (groupName) => {
     switch (groupName) {
@@ -71,9 +75,6 @@ const quarterFinalsGames = [
         teamStats[team2] = { name: team2, win: 0, loss: 0, draw: 0, points: 0, gamesPlayed: 0 };
       }
   
-      // Update games played
-      
-  
       // Update points only if the result is not 0-0
       if (game.result1 !== 0 || game.result2 !== 0) {
         if (game.result1 > game.result2) {
@@ -91,7 +92,7 @@ const quarterFinalsGames = [
           teamStats[team2].points += 1; // Increment points for team2
         }
         teamStats[team1].gamesPlayed++;
-      teamStats[team2].gamesPlayed++;
+        teamStats[team2].gamesPlayed++;
       }
     });
   
@@ -179,9 +180,30 @@ const quarterFinalsGames = [
 
       <div>
         <hr/>
-        <h2>Sijoitusottelut</h2>
+        <h2>Sijoitusottelut U8</h2>
         <div className="game-container">
           {quarterFinalsGames.map((game, index) => (
+            <div className="game-info" key={index}>
+              <div className="game-row">Klo {game.time}</div>
+              <div className="game-row">
+                <span>{game.team1}</span>
+                <span>-</span>
+                <span>{game.team2}</span>
+              </div>
+              <div className="game-row">
+                <span>{game.result1}</span>
+                <span>-</span>
+                <span>{game.result2}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <hr/>
+        <h2>Sijoitusottelut U7</h2>
+        <div className="game-container">
+          {quarterFinalsGamesU7.map((game, index) => (
             <div className="game-info" key={index}>
               <div className="game-row">Klo {game.time}</div>
               <div className="game-row">

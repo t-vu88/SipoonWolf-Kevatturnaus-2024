@@ -19,7 +19,7 @@ const Pukukopit = () => {
               <td>Ulkokoppi</td>
             </tr>
             <tr>
-              <td>Hunters 8</td>
+              <td>Hunters  U8</td>
               <td>Ulkokoppi</td>
             </tr>
             <tr>

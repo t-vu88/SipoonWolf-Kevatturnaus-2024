@@ -38,10 +38,10 @@ const Lauantai = () => {
   };
   // Define the quarter-finals games
   const quarterFinalsGames = [
-    { id: 1, time: '14:20', team1: 'Team A', team2: 'Team B', result1: 0, result2: 0 },
-    { id: 2, time: '14:20', team1: 'Team C', team2: 'Team D', result1: 0, result2: 0 },
-    { id: 3, time: '15:10', team1: 'Team E', team2: 'Team F', result1: 0, result2: 0 },
-    { id: 4, time: '15:10', team1: 'Team G', team2: 'Team H', result1: 0, result2: 0 },
+    { id: 1, time: '14:20', team1: ' Lohko A | sija 4', team2: ' Lohko B | sija 4', result1: 0, result2: 0 },
+    { id: 2, time: '14:20', team1: ' Lohko A | sija 3', team2: ' Lohko B | sija 3', result1: 0, result2: 0 },
+    { id: 3, time: '15:10', team1: ' Lohko A | sija 2', team2: ' Lohko B | sija 2', result1: 0, result2: 0 },
+    { id: 4, time: '15:10', team1: ' Lohko A | sija 1', team2: ' Lohko B | sija 1', result1: 0, result2: 0 },
   ];
 
   // Define the ranking table function

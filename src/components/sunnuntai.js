@@ -62,18 +62,6 @@ const quarterFinalsGames = [
     { time: "15:10", team1: '---', team2: '---', result1: 0, result2: 0 },
     ];
 
-  const formatGroupName = (groupName) => {
-    switch (groupName) {
-      case 'u8lohkoa':
-        return 'U8 lohko A';
-      case 'u8lohkob':
-        return 'U8 lohko B';
-      case 'u7':
-        return 'U7';
-      default:
-        return groupName;
-    }
-  };
   const calculateTeamStats = (groupId) => {
     const groupGames = games[groupId];
     const teamStats = {};

@@ -106,18 +106,6 @@ const Lauantai = () => {
   
     return teamStatsArray;
   };
-  const formatGroupName = (groupName) => {
-    switch (groupName) {
-      case 'u8lohkoa':
-        return 'U8 lohko A';
-      case 'u8lohkob':
-        return 'U8 lohko B';
-      case 'u7':
-        return 'U7';
-      default:
-        return groupName;
-    }
-  };
   return (
     <div>
       {/* U8 group A */}

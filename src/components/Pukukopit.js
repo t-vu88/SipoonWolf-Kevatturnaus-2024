@@ -3,9 +3,10 @@ import React from 'react';
 const Pukukopit = () => {
   return (
     <div className="container">
+        <p>Pukukopit on joukkueilla käytössä koko turnauspäivän ajan. </p>
       <div className="table-container">
         <hr/>
-        <h2>Lauantai</h2>
+        <h3>Lauantai</h3>
         <table className='ranking-table'>
           <thead>
             <tr>
@@ -48,7 +49,7 @@ const Pukukopit = () => {
 
       <div className="table-container">
         <hr/>
-        <h2>Sunnuntai</h2>
+        <h3>Sunnuntai</h3>
         <table className='ranking-table'>
           <thead>
             <tr>

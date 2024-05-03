@@ -204,9 +204,7 @@ li {
   .game-row{
     font-size: 17px;
   }
-  .pukukopit-table{
-    font-size: 18px;
-  }
+  
 }
 .ranking-table {
   width: 100%;
@@ -245,4 +243,8 @@ li {
 
 .ranking-table tbody tr td:last-child {
   border-right: none; /* Remove right border from last column */
+}
+
+h2, h3{
+  color: #F0AE2E;
 }

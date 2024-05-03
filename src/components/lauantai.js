@@ -164,8 +164,8 @@ const Lauantai = () => {
         <div className="game-container">
           {games.u8lohkoa.map((game) => (
             <div className="game-info" key={game.id}>
-              <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '10px' }}>Klo {game.time}</div>
-              <div className="game-row" style={{ paddingBottom: '10px', fontSize: '0.8rem' }}>
+              <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '5px' }}>Klo {game.time}</div>
+              <div className="game-row" style={{ paddingBottom: '15px', fontSize: '0.8rem' }}>
                   (Kellopääty)
                </div>
               <div className="game-row" style={{ paddingBottom: '15px' }} >
@@ -263,8 +263,8 @@ const Lauantai = () => {
         <div className="game-container">
           {games.u8lohkob.map((game) => (
             <div className="game-info" key={game.id}>
-              <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '10px' }}>Klo {game.time}</div>
-              <div className="game-row" style={{ paddingBottom: '10px', fontSize: '0.8rem' }}>
+              <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '5px' }}>Klo {game.time}</div>
+              <div className="game-row" style={{ paddingBottom: '15px', fontSize: '0.8rem' }}>
                   (Lehvosen pääty)
                </div>
               <div className="game-row" style={{ paddingBottom: '15px' }} >
@@ -316,8 +316,8 @@ const Lauantai = () => {
   <div className="game-container">
     {quarterFinalsGames.map((game, index) => (
       <div className="game-info" key={index}>
-        <div className="game-row" style={{ paddingTop: '15px', paddingBottom: '10px' }}>Klo {game.time}</div>
-        <div className="game-row" style={{ paddingBottom: '10px', fontSize: '0.8rem' }}>
+        <div className="game-row" style={{ paddingTop: '15px', paddingBottom: '5px' }}>Klo {game.time}</div>
+        <div className="game-row" style={{ paddingBottom: '15px', fontSize: '0.8rem' }}>
           ({index % 2 === 0 ? 'Lehvosen pääty' : 'Kellopääty'})
         </div>
         <div className="game-row" style={{ paddingBottom: '15px' }}>
@@ -398,8 +398,8 @@ const Lauantai = () => {
         <div className="game-container">
           {games.u7.map((game) => (
             <div className="game-info" key={game.id}>
-              <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '10px' }}>Klo {game.time}</div>
-              <div className="game-row" style={{ paddingBottom: '10px', fontSize: '0.8rem' }}>
+              <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '5px' }}>Klo {game.time}</div>
+              <div className="game-row" style={{ paddingBottom: '15px', fontSize: '0.8rem' }}>
                   (Keski kenttä)
                </div>
               <div className="game-row" style={{ paddingBottom: '15px' }} >

@@ -123,135 +123,336 @@ const quarterFinalsGames = [
 
   return (
     <div>
-      {Object.keys(games).map((groupId) => (
-        <div key={groupId}>
-          <hr />
-          <h2 className='group'>{formatGroupName(groupId)}</h2>
-
-          <div className="team-list">
-            {teams[groupId].map((team, index) => (
-              <React.Fragment key={index}>
-                <span className="team">
-                  <img style={{ marginRight: '10px' }} src={team.logoUrl} alt={team.name} className="team-logo" /> {/* Display the team logo */}
-                  {team.name}
-                  
-                </span>
-                {index !== teams[groupId].length - 1 && <hr className="team-divider" />}
-              </React.Fragment>
-            ))}
-          </div>
-          <div>
-            <h3>Lohkotilanteet</h3>
-            <table className='ranking-table'>
-              <thead>
-                <tr>
-                  <th>Joukkue</th>
-                  <th>Ott</th>
-                  <th>V</th>
-                  <th>H</th>
-                  <th>T</th>
-                  <th>Pst</th>
-                </tr>
-              </thead>
-              <tbody>
-                {calculateTeamStats(groupId).map((teamStats) => (
-                  <tr key={teamStats.name}>
-                    <td>
-                      <img style={{ marginRight: '15px' }}src={teams[groupId].find(team => team.name === teamStats.name)?.logoUrl} alt={teamStats.name} className="team-logo" /> {/* Display the team logo */}
-                      {teamStats.name}
-                    </td>
-                    <td>{teamStats.gamesPlayed || 0}</td>
-                    <td>{teamStats.win || 0}</td>
-                    <td>{teamStats.loss || 0}</td>
-                    <td>{teamStats.draw || 0}</td>
-                    <td>{teamStats.points || 0}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          <div>
-            <h3> Otteluohjelma</h3>
-          </div>
-          <div className="game-container">
-          {games[groupId].map((game) => (
-  <div className="game-info" key={game.id}>
-    <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '15px' }}>Klo {game.time}</div>
-    <div className="game-row" style={{ paddingBottom: '15px' }} >
-      <table>
-        <tbody>
-          <tr>
-            
-            <td className="team-name">{game.team1}</td>
-            <td>
-              <img
-                src={teams[groupId].find(team => team.name === game.team1)?.logoUrl}
-                alt={game.team1}
-                className="team-logo"
-              />
-            </td>
-            <td></td>
-            <td>-</td>
-            <td></td>
-            <td>
-              <img
-                src={teams[groupId].find(team => team.name === game.team2)?.logoUrl}
-                alt={game.team2}
-                className="team-logo"
-              />
-            </td>
-            <td className="team-name">{game.team2}</td>
-          </tr>
-          <tr>
-            <td>{game.result1}</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>{game.result2}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-))}
-
-
-          </div>
+      {/* U8 group A */}
+      <div>
+        <hr />
+        <h2 className='group'>U8 lohko A</h2>
+        {/* Team list for U8 group A */}
+        <div className="team-list">
+          {teams.u8lohkoa.map((team, index) => (
+            <React.Fragment key={index}>
+              <span className="team">
+                <img style={{ marginRight: '15px' }} src={team.logoUrl} alt={team.name} className="team-logo" /> {/* Display the team logo */}
+                {team.name}
+              </span>
+              {index !== teams.u8lohkoa.length - 1 && <hr className="team-divider" />}
+            </React.Fragment>
+          ))}
         </div>
-      ))}
-
-<div>
-  <hr />
-  <h2>Sijoitusottelut U8</h2>
-  <div className="game-container">
-    {quarterFinalsGames.map((game, index) => (
-      <div className="game-info" key={index}>
-        <div className="game-row" style={{ paddingTop: '15px' , paddingBottom: '15px' }}>Klo {game.time}</div>
-        <div className="game-row" style={{ paddingBottom: '15px' }}>
-          <table>
+        {/* Ranking table for U8 group A */}
+        <div>
+          
+          <h3>Lohkotilanteet</h3>
+          <table className='ranking-table'>
+            <thead>
+              <tr>
+                <th>Joukkue</th>
+                <th>Ott</th>
+                <th>V</th>
+                <th>H</th>
+                <th>T</th>
+                <th>Pst</th>
+              </tr>
+            </thead>
             <tbody>
-              <tr>
-                <td className="team-name">{game.team1}</td>
-                <td>-</td>
-                <td className="team-name">{game.team2}</td>
-              </tr>
-              <tr>
-                <td>{game.result1}</td>
-     
-                <td></td>
-            
-                <td>{game.result2}</td>
-              </tr>
+              {calculateTeamStats('u8lohkoa').map((teamStats) => (
+                <tr key={teamStats.name}>
+                  <td>
+                    <img style={{ marginRight: '4px' }} src={teams.u8lohkoa.find(team => team.name === teamStats.name)?.logoUrl} alt={teamStats.name} className="team-logo" /> {/* Display the team logo */}
+                    {teamStats.name}
+                  </td>
+                  <td>{teamStats.gamesPlayed || 0}</td>
+                  <td>{teamStats.win || 0}</td>
+                  <td>{teamStats.loss || 0}</td>
+                  <td>{teamStats.draw || 0}</td>
+                  <td>{teamStats.points || 0}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
+        <div>
+            <h3> Otteluohjelma</h3>
+          </div>
+        {/* Rendering U8 group A games */}
+        <div className="game-container">
+          {games.u8lohkoa.map((game) => (
+            <div className="game-info" key={game.id}>
+              <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '15px' }}>Klo {game.time}</div>
+              <div className="game-row" style={{ paddingBottom: '15px', fontSize: '0.8rem' }}>
+                  (Kellopääty)
+               </div>
+              <div className="game-row" style={{ paddingBottom: '15px' }} >
+                <table>
+                  <tbody>
+                    <tr>
+                      <td className="team-name">{game.team1}</td>
+                      <td>
+                        <img
+                          src={teams.u8lohkoa.find(team => team.name === game.team1)?.logoUrl}
+                          alt={game.team1}
+                          className="team-logo"
+                        />
+                      </td>
+                      <td></td>
+                      <td>-</td>
+                      <td></td>
+                      <td>
+                        <img
+                          src={teams.u8lohkoa.find(team => team.name === game.team2)?.logoUrl}
+                          alt={game.team2}
+                          className="team-logo"
+                        />
+                      </td>
+                      <td className="team-name">{game.team2}</td>
+                    </tr>
+                    <tr>
+                      <td>{game.result1}</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>{game.result2}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-    ))}
-  </div>
-</div>
+  
+      {/* U8 group B */}
+      <div>
+        <hr />
+        <h2 className='group'>U8 lohko B</h2>
+        {/* Team list for U8 group B */}
+        <div className="team-list">
+          {teams.u8lohkob.map((team, index) => (
+            <React.Fragment key={index}>
+              <span className="team">
+                <img style={{ marginRight: '15px' }} src={team.logoUrl} alt={team.name} className="team-logo" /> {/* Display the team logo */}
+                {team.name}
+              </span>
+              {index !== teams.u8lohkob.length - 1 && <hr className="team-divider" />}
+            </React.Fragment>
+          ))}
+        </div>
+        {/* Ranking table for U8 group B */}
+        <div>
+          <h3>Lohkotilanteet</h3>
+          <table className='ranking-table'>
+            <thead>
+              <tr>
+                <th>Joukkue</th>
+                <th>Ott</th>
+                <th>V</th>
+                <th>H</th>
+                <th>T</th>
+                <th>Pst</th>
+              </tr>
+            </thead>
+            <tbody>
+              {calculateTeamStats('u8lohkob').map((teamStats) => (
+                <tr key={teamStats.name}>
+                  <td>
+                    <img style={{ marginRight: '4px' }}src={teams.u8lohkob.find(team => team.name === teamStats.name)?.logoUrl} alt={teamStats.name} className="team-logo" /> {/* Display the team logo */}
+                    {teamStats.name}
+                  </td>
+                  <td>{teamStats.gamesPlayed || 0}</td>
+                  <td>{teamStats.win || 0}</td>
+                  <td>{teamStats.loss || 0}</td>
+                  <td>{teamStats.draw || 0}</td>
+                  <td>{teamStats.points || 0}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div>
+            <h3> Otteluohjelma</h3>
+          </div>
+        {/* Rendering U8 group B games */}
+        <div className="game-container">
+          {games.u8lohkob.map((game) => (
+            <div className="game-info" key={game.id}>
+              <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '15px' }}>Klo {game.time}</div>
+              <div className="game-row" style={{ paddingBottom: '15px', fontSize: '0.8rem' }}>
+                  (Lehkosen pääty)
+               </div>
+              <div className="game-row" style={{ paddingBottom: '15px' }} >
+                <table>
+                  <tbody>
+                    <tr>
+                      <td className="team-name">{game.team1}</td>
+                      <td>
+                        <img
+                          src={teams.u8lohkob.find(team => team.name === game.team1)?.logoUrl}
+                          alt={game.team1}
+                          className="team-logo"
+                        />
+                      </td>
+                      <td></td>
+                      <td>-</td>
+                      <td></td>
+                      <td>
+                        <img
+                          src={teams.u8lohkob.find(team => team.name === game.team2)?.logoUrl}
+                          alt={game.team2}
+                          className="team-logo"
+                        />
+                      </td>
+                      <td className="team-name">{game.team2}</td>
+                    </tr>
+                    <tr>
+                      <td>{game.result1}</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>{game.result2}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+  
+      {/* Quarterfinal games for U8 */}
+      <div>
+        <hr />
+        <h3> U8 Sijoitusottelut</h3>
+        {/* Rendering quarterfinal games for U8 */}
+        <div className="game-container">
+          {quarterFinalsGames.map((game, index) => (
+            <div className="game-info" key={index}>
+              <div className="game-row" style={{ paddingTop: '15px' , paddingBottom: '15px' }}>Klo {game.time}</div>
+              <div className="game-row" style={{ paddingBottom: '15px', fontSize: '0.8rem' }}>
+          ({index % 2 === 0 ? 'Lehvosen pääty' : 'Kellopääty'})
+        </div>
+              <div className="game-row" style={{ paddingBottom: '15px' }}>
+                <table className= "sijoituspeli">
+                  <tbody>
+                    <tr>
+                      <td className="team-name">{game.team1}</td>
+                      <td>-</td>
+                      <td className="team-name">{game.team2}</td>
+                    </tr>
+                    <tr>
+                      <td>{game.result1}</td>
+                      <td></td>
+                      <td>{game.result2}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+  
+      {/* U7 */}
+      <div>
+        <hr />
+        <h2 className='group'>U7</h2>
+        {/* Team list for U7 */}
+        <div className="team-list">
+          {teams.u7.map((team, index) => (
+            <React.Fragment key={index}>
+              <span className="team">
+                <img style={{ marginRight: '15px' }} src={team.logoUrl} alt={team.name} className="team-logo" /> {/* Display the team logo */}
+                {team.name}
+              </span>
+              {index !== teams.u7.length - 1 && <hr className="team-divider" />}
+            </React.Fragment>
+          ))}
+        </div>
+        {/* Ranking table for U7 */}
+        <div>
+          <h3>Lohkotilanteet</h3>
+          <table className='ranking-table'>
+            <thead>
+              <tr>
+                <th>Joukkue</th>
+                <th>Ott</th>
+                <th>V</th>
+                <th>H</th>
+                <th>T</th>
+                <th>Pst</th>
+              </tr>
+            </thead>
+            <tbody>
+              {calculateTeamStats('u7').map((teamStats) => (
+                <tr key={teamStats.name}>
+                  <td>
+                    <img style={{ marginRight: '7px' }}src={teams.u7.find(team => team.name === teamStats.name)?.logoUrl} alt={teamStats.name} className="team-logo" /> {/* Display the team logo */}
+                    {teamStats.name}
+                  </td>
+                  <td>{teamStats.gamesPlayed || 0}</td>
+                  <td>{teamStats.win || 0}</td>
+                  <td>{teamStats.loss || 0}</td>
+                  <td>{teamStats.draw || 0}</td>
+                  <td>{teamStats.points || 0}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div>
+            <h3> Otteluohjelma</h3>
+          </div>
+        {/* Rendering U7 games */}
+        <div className="game-container">
+          {games.u7.map((game) => (
+            <div className="game-info" key={game.id}>
+              <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '15px' }}>Klo {game.time}</div>
+              <div className="game-row" style={{ paddingBottom: '15px', fontSize: '0.8rem' }}>
+                  (Keski kenttä)
+               </div>
+              <div className="game-row" style={{ paddingBottom: '15px' }} >
+                <table>
+                  <tbody>
+                    <tr>
+                      <td className="team-name">{game.team1}</td>
+                      <td>
+                        <img
+                          src={teams.u7.find(team => team.name === game.team1)?.logoUrl}
+                          alt={game.team1}
+                          className="team-logo"
+                        />
+                      </td>
+                      <td></td>
+                      <td>-</td>
+                      <td></td>
+                      <td>
+                        <img
+                          src={teams.u7.find(team => team.name === game.team2)?.logoUrl}
+                          alt={game.team2}
+                          className="team-logo"
+                        />
+                      </td>
+                      <td className="team-name">{game.team2}</td>
+                    </tr>
+                    <tr>
+                      <td>{game.result1}</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>{game.result2}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
 <div>
   <hr />
   <h2>Sijoitusottelut U7</h2>
@@ -259,6 +460,9 @@ const quarterFinalsGames = [
     {quarterFinalsGamesU7.map((game, index) => (
       <div className="game-info" key={index}>
         <div className="game-row" style={{ paddingTop: '15px' , paddingBottom: '15px' }}>Klo {game.time}</div>
+        <div className="game-row" style={{ paddingBottom: '15px', fontSize: '0.8rem' }}>
+          (Keski kenttä)
+        </div>
         <div className="game-row" style={{ paddingBottom: '15px' }}>
           <table>
             <tbody>
@@ -281,7 +485,7 @@ const quarterFinalsGames = [
     ))}
   </div>
 </div>
-    </div>
+</div>
   );
 };
   export default Sunnuntai;

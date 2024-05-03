@@ -3,7 +3,6 @@ import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Tab from './components/tab';
 import Content from './components/content';
-import logo from './sipoonwolf.png'; // Import the logo image
 
 function App() {
   const [currentTab, setCurrentTab] = useState('lauantai');

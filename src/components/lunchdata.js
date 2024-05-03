@@ -6,12 +6,26 @@ const lunchData = [
         day: "Lauantai",
         locations: [
             {
-                location: "Kokoustila 2 krs",
-                lunchTimes: ["12:00   Wolf musta", "12:10   Haki Blue", "12:30   Hunters Blue", "12:40   Haki Black",  "13:00   Hunters U7", "13:00   Salamat White", "13:30   HJK blue", "13:40   HIFK red"]
+                location: "Kokoustila 2.krs",
+                lunchTimes: [
+                    { time: "12:00", team: "Wolf musta" },
+                    { time: "12:10", team: "Haki Blue" },
+                    { time: "12:30", team: "Hunters Blue" },
+                    { time: "12:40", team: "Haki Black" },
+                    { time: "13:00", team: "Hunters U7" },
+                    { time: "13:00", team: "Salamat White" },
+                    { time: "13:30", team: "HJK blue" },
+                    { time: "13:40", team: "HIFK red" }
+                ]
             },
             {
-                location: "2 krs aula?",
-                lunchTimes: ["12:00   Wolf keltainen", "12:30   Hunters Yellow", "13:00  Salamat Blue", "13:30   HJK White"]
+                location: "2.krs aula",
+                lunchTimes: [
+                    { time: "12:00", team: "Wolf keltainen" },
+                    { time: "12:30", team: "Hunters Yellow" },
+                    { time: "13:00", team: "Salamat Blue" },
+                    { time: "13:30", team: "HJK White" }
+                ]
             }
         ]
     },
@@ -19,12 +33,26 @@ const lunchData = [
         day: "Sunnuntai",
         locations: [
             {
-                location: "Kokoustila 2 krs",
-                lunchTimes: ["12:00 Wolf musta",  "12:00 Wolf U7", "12:30 HJK Black","12:30 HIFK White", "13:00 HIFK red", "13:00 Haki White", "13:30 Viikingit Red", "13:30 HIFK Blue"]
+                location: "Kokoustila 2.krs",
+                lunchTimes: [
+                    { time: "12:00", team: "Wolf musta" },
+                    { time: "12:00", team: "Wolf U7" },
+                    { time: "12:30", team: "HJK Black" },
+                    { time: "12:30", team: "HIFK White" },
+                    { time: "13:00", team: "HIFK red" },
+                    { time: "13:00", team: "Haki White" },
+                    { time: "13:30", team: "Viikingit Red" },
+                    { time: "13:30", team: "HIFK Blue" }
+                ]
             },
             {
-                location: "2 krs aula?",
-                lunchTimes: ["12:00 Wolf Keltainen", "12:30 HJK Blue", "13:00 HIFK White", "13:30 Viikingit White"]
+                location: "2.krs aula",
+                lunchTimes: [
+                    { time: "12:00", team: "Wolf Keltainen" },
+                    { time: "12:30", team: "HJK Blue" },
+                    { time: "13:00", team: "HIFK White" },
+                    { time: "13:30", team: "Viikingit White" }
+                ]
             }
         ]
     }

@@ -204,7 +204,9 @@ li {
   .game-row{
     font-size: 17px;
   }
-  
+  .pukukopit-table{
+    font-size: 18px;
+  }
 }
 .ranking-table {
   width: 100%;

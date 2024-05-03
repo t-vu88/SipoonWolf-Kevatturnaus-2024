@@ -5,6 +5,7 @@ const Ruokailu = () => {
   const paragraphStyle = {
     color: 'white', // Example color
     lineHeight: '2',
+    fontSize:'18px'
     // Add more styles as needed
   };
 
@@ -15,18 +16,7 @@ const Ruokailu = () => {
     padding: '10px',
   };
 
-  // Style for the list items (lunch times)
-  const listItemStyle = {
-    marginBottom: '8px',
-    paddingLeft:'12px' // Add margin bottom for extra spacing
-  };
-
-  // Style for the space after the time
-  const timeSpaceStyle = {
-    display: 'inline-block',
-    width: '20px', // Adjust width as needed
-  };
-
+  
   return (
     <div>
       <p style={paragraphStyle}>
@@ -40,14 +30,22 @@ const Ruokailu = () => {
             <div key={locationIndex}>
               <hr />
               <h4>{location.location}</h4>
-              <ul>
-                {location.lunchTimes.map((time, timeIndex) => (
-                  <li key={timeIndex} style={listItemStyle}>
-                    {time}
-                    <span style={timeSpaceStyle}></span> {/* Add space */}
-                  </li>
-                ))}
-              </ul>
+              <table className='ranking-table'>
+                <thead>
+                  <tr>
+                    <th >Aika</th>
+                    <th>Joukkue</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {location.lunchTimes.map((time, timeIndex) => (
+                    <tr key={timeIndex}>
+                      <td >{time.time}</td>
+                      <td >{time.team}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           ))}
         </div>

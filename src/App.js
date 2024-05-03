@@ -27,7 +27,8 @@ function App() {
             <Tab label="Sunnuntai 19.05.24" tabName="sunnuntai" />
             <Tab label="Pukukopit" tabName="pukukopit" />
             <Tab label="Ruokailu" tabName="ruokailu" />
-            <Tab label="Kahvila & Arpajaiset" tabName="kahvila" />
+            <Tab label=" Susi Kahvila" tabName="kahvila" />
+            <Tab label="Arpajaiset" tabName="arpajaiset" />
           </div>
           <Content />
         </div>

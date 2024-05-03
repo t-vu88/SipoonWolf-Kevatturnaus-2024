@@ -4,6 +4,7 @@ import Sunnuntai from './sunnuntai';
 import Ruokailu from './Ruokailu';
 import Pukukopit from './Pukukopit';
 import Kahvila from './Kahvila';
+import Arpajaiset from './Arpajaiset';
 import { useLocation } from 'react-router-dom';
 
 const Content = () => {
@@ -17,6 +18,7 @@ const Content = () => {
       {activeTab === 'ruokailu' && <Ruokailu />}
       {activeTab === 'pukukopit' && <Pukukopit />}
       {activeTab === 'kahvila' && <Kahvila />}
+      {activeTab === 'arpajaiset' && <Arpajaiset />}
     </div>
   );
 };

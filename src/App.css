@@ -193,10 +193,10 @@ li {
   }
   .ranking-table td {
     border-bottom: 1px solid #ddd;
-    font-size: 17px; /* Add bottom border to table data cells */
+    font-size: 16px; /* Add bottom border to table data cells */
   }
   .ranking-table th{
-    font-size: 19px;
+    font-size: 18px;
   }
   .sijoituspeli{
     font-size: 20px;

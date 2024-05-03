@@ -16,7 +16,7 @@ const Lauantai = () => {
       { id: 3, time: '11:20', team1: 'Wolf Keltainen', team2: 'Hunters Yellow', result1: 0, result2: 0 },
       { id: 4, time: '12:10', team1: 'Salamat Blue', team2: 'HJK White', result1: 0, result2: 0 },
       { id: 5, time: '12:50', team1: 'Wolf Keltainen', team2: 'HJK White', result1: 0, result2: 0 },
-      { id: 6, time: '13:40', team1: 'Salamat Blue', team2: 'Hunter Yellow', result1: 0, result2: 0 }
+      { id: 6, time: '13:40', team1: 'Salamat Blue', team2: 'Hunters Yellow', result1: 0, result2: 0 }
     ],
     u7: [
       { id: 1, time: '10:00', team1: 'Wolf', team2: 'Hunters U7', result1: 0, result2: 0 },
@@ -32,9 +32,25 @@ const Lauantai = () => {
     ]
   };
   const teams = {
-    u8lohkoa: ["Wolf Musta", "Salamat White", "Hunters Blue", "HJK Blue"],
-    u8lohkob: ["Wolf Keltainen", "Salamat Blue", "Hunters Yellow", "HJK White"],
-    u7: ["Wolf", "Haki Blue", "HIFK Red", "Haki Black", "Hunters U7"]
+    u8lohkoa: [
+      { name: "Wolf Musta", logoUrl: "https://files.eliteprospects.com/layout/logos/f667f640-87d9-4879-b248-dde1387fac00_large.png" },
+      { name: "Salamat White", logoUrl: "https://scontent.fqlf1-2.fna.fbcdn.net/v/t39.30808-1/309048836_590434576208237_1242104477708606014_n.png?stp=c99.0.480.480a_dst-png_p480x480&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=1eiwrLQmBMUQ7kNvgHq5634&_nc_ht=scontent.fqlf1-2.fna&oh=00_AfCPuTTFjWh2TP3D0A0jvJEZ9GjvJCiR77q0ZwoNBXQJvQ&oe=663992CD" },
+      { name: "Hunters Blue", logoUrl: "https://static.jopox.fi/hunters/logos/logo-600.png" },
+      { name: "HJK Blue", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Helsingin_J%C3%A4%C3%A4kiekkoklubi_logo.png/240px-Helsingin_J%C3%A4%C3%A4kiekkoklubi_logo.png" }
+    ],
+    u8lohkob: [
+      { name: "Wolf Keltainen", logoUrl: "https://files.eliteprospects.com/layout/logos/f667f640-87d9-4879-b248-dde1387fac00_large.png" },
+      { name: "Salamat Blue", logoUrl: "https://scontent.fqlf1-2.fna.fbcdn.net/v/t39.30808-1/309048836_590434576208237_1242104477708606014_n.png?stp=c99.0.480.480a_dst-png_p480x480&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=1eiwrLQmBMUQ7kNvgHq5634&_nc_ht=scontent.fqlf1-2.fna&oh=00_AfCPuTTFjWh2TP3D0A0jvJEZ9GjvJCiR77q0ZwoNBXQJvQ&oe=663992CD" },
+      { name: "Hunters Yellow", logoUrl: "https://static.jopox.fi/hunters/logos/logo-600.png" },
+      { name: "HJK White", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Helsingin_J%C3%A4%C3%A4kiekkoklubi_logo.png/240px-Helsingin_J%C3%A4%C3%A4kiekkoklubi_logo.png" }
+    ],
+    u7: [
+      { name: "Wolf", logoUrl: "https://files.eliteprospects.com/layout/logos/f667f640-87d9-4879-b248-dde1387fac00_large.png" },
+      { name: "Haki Blue", logoUrl: "https://upload.wikimedia.org/wikipedia/fi/thumb/b/b0/Haki-logo.png/500px-Haki-logo.png" },
+      { name: "HIFK Red", logoUrl: "https://hifk.fi/wp-content/themes/hifk/assets/images/ifk.svg" },
+      { name: "Haki Black", logoUrl: "https://upload.wikimedia.org/wikipedia/fi/thumb/b/b0/Haki-logo.png/500px-Haki-logo.png" },
+      { name: "Hunters U7", logoUrl: "https://static.jopox.fi/hunters/logos/logo-600.png" }
+    ]
   };
   // Define the quarter-finals games
   const quarterFinalsGames = [
@@ -112,7 +128,11 @@ const Lauantai = () => {
           <div className="team-list">
             {teams[groupId].map((team, index) => (
               <React.Fragment key={index}>
-                <span className="team">{team}</span>
+                <span className="team">
+                  <img style={{ marginRight: '10px' }} src={team.logoUrl} alt={team.name} className="team-logo" /> {/* Display the team logo */}
+                  {team.name}
+                  
+                </span>
                 {index !== teams[groupId].length - 1 && <hr className="team-divider" />}
               </React.Fragment>
             ))}
@@ -133,7 +153,10 @@ const Lauantai = () => {
               <tbody>
                 {calculateTeamStats(groupId).map((teamStats) => (
                   <tr key={teamStats.name}>
-                    <td>{teamStats.name}</td>
+                    <td>
+                      <img style={{ marginRight: '15px' }}src={teams[groupId].find(team => team.name === teamStats.name)?.logoUrl} alt={teamStats.name} className="team-logo" /> {/* Display the team logo */}
+                      {teamStats.name}
+                    </td>
                     <td>{teamStats.gamesPlayed || 0}</td>
                     <td>{teamStats.win || 0}</td>
                     <td>{teamStats.loss || 0}</td>
@@ -149,52 +172,84 @@ const Lauantai = () => {
             <h3> Otteluohjelma</h3>
           </div>
           <div className="game-container">
-            {games[groupId].map((game) => (
-              <div className="game-info" key={game.id}>
-                <div className="game-row">Klo {game.time}</div>
-                <div className="game-row">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td>{game.team1}</td>
-                        <td>-</td>
-                        <td>{game.team2}</td>
-                      </tr>
-                      <tr>
-                        <td>{game.result1}</td>
-                        <td></td>
-                        <td>{game.result2}</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            ))}
+          {games[groupId].map((game) => (
+  <div className="game-info" key={game.id}>
+    <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '15px' }}>Klo {game.time}</div>
+    <div className="game-row" style={{ paddingBottom: '15px' }} >
+      <table>
+        <tbody>
+          <tr>
+            
+            <td className="team-name">{game.team1}</td>
+            <td>
+              <img
+                src={teams[groupId].find(team => team.name === game.team1)?.logoUrl}
+                alt={game.team1}
+                className="team-logo"
+              />
+            </td>
+            <td></td>
+            <td>-</td>
+            <td></td>
+            <td>
+              <img
+                src={teams[groupId].find(team => team.name === game.team2)?.logoUrl}
+                alt={game.team2}
+                className="team-logo"
+              />
+            </td>
+            <td className="team-name">{game.team2}</td>
+          </tr>
+          <tr>
+            <td>{game.result1}</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{game.result2}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+))}
+
+
           </div>
         </div>
       ))}
 
-      <div>
-        <hr/>
-        <h2>Sijoitusottelut</h2>
-        <div className="game-container">
-          {quarterFinalsGames.map((game, index) => (
-            <div className="game-info" key={index}>
-              <div className="game-row">Klo {game.time}</div>
-              <div className="game-row">
-                <span>{game.team1}</span>
-                <span>-</span>
-                <span>{game.team2}</span>
-              </div>
-              <div className="game-row">
-                <span>{game.result1}</span>
-                <span>-</span>
-                <span>{game.result2}</span>
-              </div>
-            </div>
-          ))}
+<div>
+  <hr />
+  <h2>Sijoitusottelut</h2>
+  <div className="game-container">
+    {quarterFinalsGames.map((game, index) => (
+      <div className="game-info" key={index}>
+        <div className="game-row" style={{ paddingTop: '15px' , paddingBottom: '15px' }}>Klo {game.time}</div>
+        <div className="game-row" style={{ paddingBottom: '15px' }}>
+          <table>
+            <tbody>
+              <tr>
+                <td className="team-name">{game.team1}</td>
+                <td>-</td>
+                <td className="team-name">{game.team2}</td>
+              </tr>
+              <tr>
+                <td>{game.result1}</td>
+     
+                <td></td>
+            
+                <td>{game.result2}</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
+    ))}
+  </div>
+</div>
+
     </div>
   );
 };

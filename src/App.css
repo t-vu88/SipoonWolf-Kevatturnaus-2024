@@ -41,8 +41,8 @@ html {
 }
 
 .logo {
-  max-width: 25%; /* Ensure the logo doesn't exceed its container's width */
-  max-height: 25%; /* Ensure the logo doesn't exceed its container's height */
+  max-width: 25%; 
+  max-height: 25%; 
   width: auto; /* Allow the logo to adjust its width based on its aspect ratio */
   height: auto; /* Allow the logo to adjust its height based on its aspect ratio */
   margin: 2vw; /* Adjust as per your spacing preference */
@@ -112,7 +112,11 @@ li {
 .team {
   margin: 1vh; /* Adjust as needed */
 }
-
+.team-logo {
+  width: 30px; /* Set the width of the logo */
+  height: 30px; /* Set the height of the logo */
+  /* Add any additional styles as needed */
+}
 .team-divider {
   width: 0.1rem; /* Adjust as needed */
   height: 5vh; /* Adjust as needed */
@@ -123,10 +127,16 @@ li {
 .game-info {
   text-align: center;
   border: 1px dotted #F0AE2E; /* Add a dotted border */
-  padding: 10px;
-  margin: 10px;
+  padding: 2px;
+  margin: 2px;
+}
+.game-info table {
+  width: 100%; /* Ensure the table takes up full width */
 }
 
+.game-info table .team-name {
+  width: 40%; /* Set a fixed width for the team name cells */
+}
 .game-row {
   display: flex;
   justify-content: center; /* Center horizontally */
@@ -136,7 +146,7 @@ li {
 .team-names,
 .results {
   display: flex;
-  align-items: center; /* Align children vertically */
+  align-items:center; /* Align children vertically */
 }
 
 .team-names span,
@@ -219,7 +229,7 @@ li {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
   /* Further adjust the layout for screens smaller than 400px */
   .tab-button {
     flex-basis: 90%; /* Each tab occupies 90% of the width to fit one tab in a row */

@@ -31,9 +31,24 @@ const Sunnuntai = () => {
 };
 
 const teams = {
-  u8lohkoa: ["Wolf Musta", "HIFK Red", "HJK Black", "Viikingit Red"],
-  u8lohkob: ["Wolf Keltainen", "HIFK White", "HJK Blue", "Viikingit White"],
-  u7: ["Wolf", "Haki White", "HIFK White", "HIFK Blue"]
+  u8lohkoa: [
+    { name: "Wolf Musta", logoUrl: "https://files.eliteprospects.com/layout/logos/f667f640-87d9-4879-b248-dde1387fac00_large.png" },
+    { name: "HIFK Red", logoUrl: "https://hifk.fi/wp-content/themes/hifk/assets/images/ifk.svg" },
+    { name: "HJK Black", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Helsingin_J%C3%A4%C3%A4kiekkoklubi_logo.png/240px-Helsingin_J%C3%A4%C3%A4kiekkoklubi_logo.png" },
+    { name: "Viikingit Red", logoUrl: "https://upload.wikimedia.org/wikipedia/fi/e/e3/Viikingit_HC_logo.png"}
+  ],
+  u8lohkob: [
+    { name: "Wolf Keltainen", logoUrl:"https://files.eliteprospects.com/layout/logos/f667f640-87d9-4879-b248-dde1387fac00_large.png" },
+    { name: "HIFK White", logoUrl: "https://hifk.fi/wp-content/themes/hifk/assets/images/ifk.svg"  },
+    { name: "HJK Blue", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Helsingin_J%C3%A4%C3%A4kiekkoklubi_logo.png/240px-Helsingin_J%C3%A4%C3%A4kiekkoklubi_logo.png"},
+    { name: "Viikingit White", logoUrl: "https://upload.wikimedia.org/wikipedia/fi/e/e3/Viikingit_HC_logo.png" }
+  ],
+  u7: [
+    { name: "Wolf", logoUrl: "https://files.eliteprospects.com/layout/logos/f667f640-87d9-4879-b248-dde1387fac00_large.png" },
+    { name: "Haki White", logoUrl: "https://upload.wikimedia.org/wikipedia/fi/thumb/b/b0/Haki-logo.png/500px-Haki-logo.png" },
+    { name: "HIFK White", logoUrl: "https://hifk.fi/wp-content/themes/hifk/assets/images/ifk.svg"  },
+    { name: "HIFK Blue", logoUrl: "https://hifk.fi/wp-content/themes/hifk/assets/images/ifk.svg"  }
+  ]
 };
 
 const quarterFinalsGames = [
@@ -43,8 +58,8 @@ const quarterFinalsGames = [
   { id: 4, time: '15:10', team1: ' Lohko A | sija 1', team2: ' Lohko B | sija 1', result1: 0, result2: 0 },
 ];
   const quarterFinalsGamesU7 = [
-    { time: "14:20", team1: '', team2: '', result1: 0, result2: 0 },
-    { time: "15:10", team1: '', team2: '', result1: 0, result2: 0 },
+    { time: "14:20", team1: '---', team2: '---', result1: 0, result2: 0 },
+    { time: "15:10", team1: '---', team2: '---', result1: 0, result2: 0 },
     ];
 
   const formatGroupName = (groupName) => {
@@ -116,7 +131,11 @@ const quarterFinalsGames = [
           <div className="team-list">
             {teams[groupId].map((team, index) => (
               <React.Fragment key={index}>
-                <span className="team">{team}</span>
+                <span className="team">
+                  <img style={{ marginRight: '10px' }} src={team.logoUrl} alt={team.name} className="team-logo" /> {/* Display the team logo */}
+                  {team.name}
+                  
+                </span>
                 {index !== teams[groupId].length - 1 && <hr className="team-divider" />}
               </React.Fragment>
             ))}
@@ -137,7 +156,10 @@ const quarterFinalsGames = [
               <tbody>
                 {calculateTeamStats(groupId).map((teamStats) => (
                   <tr key={teamStats.name}>
-                    <td>{teamStats.name}</td>
+                    <td>
+                      <img style={{ marginRight: '15px' }}src={teams[groupId].find(team => team.name === teamStats.name)?.logoUrl} alt={teamStats.name} className="team-logo" /> {/* Display the team logo */}
+                      {teamStats.name}
+                    </td>
                     <td>{teamStats.gamesPlayed || 0}</td>
                     <td>{teamStats.win || 0}</td>
                     <td>{teamStats.loss || 0}</td>
@@ -150,76 +172,115 @@ const quarterFinalsGames = [
           </div>
 
           <div>
-            <h3>Otteluohjelma</h3>
+            <h3> Otteluohjelma</h3>
           </div>
           <div className="game-container">
-            {games[groupId].map((game) => (
-              <div className="game-info" key={game.id}>
-                <div className="game-row">Klo {game.time}</div>
-                <div className="game-row">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td>{game.team1}</td>
-                        <td>-</td>
-                        <td>{game.team2}</td>
-                      </tr>
-                      <tr>
-                        <td>{game.result1}</td>
-                        <td></td>
-                        <td>{game.result2}</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            ))}
+          {games[groupId].map((game) => (
+  <div className="game-info" key={game.id}>
+    <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '15px' }}>Klo {game.time}</div>
+    <div className="game-row" style={{ paddingBottom: '15px' }} >
+      <table>
+        <tbody>
+          <tr>
+            
+            <td className="team-name">{game.team1}</td>
+            <td>
+              <img
+                src={teams[groupId].find(team => team.name === game.team1)?.logoUrl}
+                alt={game.team1}
+                className="team-logo"
+              />
+            </td>
+            <td></td>
+            <td>-</td>
+            <td></td>
+            <td>
+              <img
+                src={teams[groupId].find(team => team.name === game.team2)?.logoUrl}
+                alt={game.team2}
+                className="team-logo"
+              />
+            </td>
+            <td className="team-name">{game.team2}</td>
+          </tr>
+          <tr>
+            <td>{game.result1}</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{game.result2}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+))}
+
+
           </div>
         </div>
       ))}
 
-      <div>
-        <hr/>
-        <h2>Sijoitusottelut U8</h2>
-        <div className="game-container">
-          {quarterFinalsGames.map((game, index) => (
-            <div className="game-info" key={index}>
-              <div className="game-row">Klo {game.time}</div>
-              <div className="game-row">
-                <span>{game.team1}</span>
-                <span>-</span>
-                <span>{game.team2}</span>
-              </div>
-              <div className="game-row">
-                <span>{game.result1}</span>
-                <span>-</span>
-                <span>{game.result2}</span>
-              </div>
-            </div>
-          ))}
+<div>
+  <hr />
+  <h2>Sijoitusottelut U8</h2>
+  <div className="game-container">
+    {quarterFinalsGames.map((game, index) => (
+      <div className="game-info" key={index}>
+        <div className="game-row" style={{ paddingTop: '15px' , paddingBottom: '15px' }}>Klo {game.time}</div>
+        <div className="game-row" style={{ paddingBottom: '15px' }}>
+          <table>
+            <tbody>
+              <tr>
+                <td className="team-name">{game.team1}</td>
+                <td>-</td>
+                <td className="team-name">{game.team2}</td>
+              </tr>
+              <tr>
+                <td>{game.result1}</td>
+     
+                <td></td>
+            
+                <td>{game.result2}</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-      <div>
-        <hr/>
-        <h2>Sijoitusottelut U7</h2>
-        <div className="game-container">
-          {quarterFinalsGamesU7.map((game, index) => (
-            <div className="game-info" key={index}>
-              <div className="game-row">Klo {game.time}</div>
-              <div className="game-row">
-                <span>{game.team1}</span>
-                <span>-</span>
-                <span>{game.team2}</span>
-              </div>
-              <div className="game-row">
-                <span>{game.result1}</span>
-                <span>-</span>
-                <span>{game.result2}</span>
-              </div>
-            </div>
-          ))}
+    ))}
+  </div>
+</div>
+<div>
+  <hr />
+  <h2>Sijoitusottelut U7</h2>
+  <div className="game-container">
+    {quarterFinalsGamesU7.map((game, index) => (
+      <div className="game-info" key={index}>
+        <div className="game-row" style={{ paddingTop: '15px' , paddingBottom: '15px' }}>Klo {game.time}</div>
+        <div className="game-row" style={{ paddingBottom: '15px' }}>
+          <table>
+            <tbody>
+              <tr>
+                <td className="team-name">{game.team1}</td>
+                <td>-</td>
+                <td className="team-name">{game.team2}</td>
+              </tr>
+              <tr>
+                <td>{game.result1}</td>
+     
+                <td></td>
+            
+                <td>{game.result2}</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
+    ))}
+  </div>
+</div>
     </div>
   );
 };

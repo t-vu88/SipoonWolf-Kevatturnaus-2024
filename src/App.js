@@ -14,8 +14,8 @@ function App() {
           <div className="logo-container">
             <img src="https://files.eliteprospects.com/layout/logos/f667f640-87d9-4879-b248-dde1387fac00_large.png" alt="Logo" className="logo" /> {/* Render the logo */}
             <div className="title">
-              <p>Sipoon Wolf </p>
-              <p> U7 & U8</p>
+              <p> Sipoon Wolf</p> 
+              <p>U7 & U8</p>
               <p>Kevätturnaus 2024</p>
             </div>
           

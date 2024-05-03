@@ -54,10 +54,10 @@ const Lauantai = () => {
   };
   // Define the quarter-finals games
   const quarterFinalsGames = [
-    { id: 1, time: '14:20', team1: 'Lohko A | sija 4', team2: 'Lohko B | sija 4', result1: 0, result2: 0 },
-    { id: 2, time: '14:20', team1: 'Lohko A | sija 3', team2: 'Lohko B | sija 3', result1: 0, result2: 0 },
-    { id: 3, time: '15:10', team1: 'Lohko A | sija 2', team2: 'Lohko B | sija 2', result1: 0, result2: 0 },
-    { id: 4, time: '15:10', team1: 'Lohko A | sija 1', team2: 'Lohko B | sija 1', result1: 0, result2: 0 },
+    { id: 1, time: '14:20', team1: 'A Lohko | sija 4', team2: 'B Lohko | sija 4', result1: 0, result2: 0 },
+    { id: 2, time: '14:20', team1: 'A Lohko | sija 3', team2: 'B Lohko | sija 3', result1: 0, result2: 0 },
+    { id: 3, time: '15:10', team1: 'A Lohko | sija 2', team2: 'B Lohko | sija 2', result1: 0, result2: 0 },
+    { id: 4, time: '15:10', team1: 'A Lohko | sija 1', team2: 'B Lohko | sija 1', result1: 0, result2: 0 },
   ];
 
   // Define the ranking table function
@@ -164,8 +164,8 @@ const Lauantai = () => {
         <div className="game-container">
           {games.u8lohkoa.map((game) => (
             <div className="game-info" key={game.id}>
-              <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '15px' }}>Klo {game.time}</div>
-              <div className="game-row" style={{ paddingBottom: '15px', fontSize: '0.8rem' }}>
+              <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '10px' }}>Klo {game.time}</div>
+              <div className="game-row" style={{ paddingBottom: '10px', fontSize: '0.8rem' }}>
                   (Kellopääty)
                </div>
               <div className="game-row" style={{ paddingBottom: '15px' }} >
@@ -263,8 +263,8 @@ const Lauantai = () => {
         <div className="game-container">
           {games.u8lohkob.map((game) => (
             <div className="game-info" key={game.id}>
-              <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '15px' }}>Klo {game.time}</div>
-              <div className="game-row" style={{ paddingBottom: '15px', fontSize: '0.8rem' }}>
+              <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '10px' }}>Klo {game.time}</div>
+              <div className="game-row" style={{ paddingBottom: '10px', fontSize: '0.8rem' }}>
                   (Lehvosen pääty)
                </div>
               <div className="game-row" style={{ paddingBottom: '15px' }} >
@@ -316,8 +316,8 @@ const Lauantai = () => {
   <div className="game-container">
     {quarterFinalsGames.map((game, index) => (
       <div className="game-info" key={index}>
-        <div className="game-row" style={{ paddingTop: '15px', paddingBottom: '5px' }}>Klo {game.time}</div>
-        <div className="game-row" style={{ paddingBottom: '15px', fontSize: '0.8rem' }}>
+        <div className="game-row" style={{ paddingTop: '15px', paddingBottom: '10px' }}>Klo {game.time}</div>
+        <div className="game-row" style={{ paddingBottom: '10px', fontSize: '0.8rem' }}>
           ({index % 2 === 0 ? 'Lehvosen pääty' : 'Kellopääty'})
         </div>
         <div className="game-row" style={{ paddingBottom: '15px' }}>
@@ -398,8 +398,8 @@ const Lauantai = () => {
         <div className="game-container">
           {games.u7.map((game) => (
             <div className="game-info" key={game.id}>
-              <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '15px' }}>Klo {game.time}</div>
-              <div className="game-row" style={{ paddingBottom: '15px', fontSize: '0.8rem' }}>
+              <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '10px' }}>Klo {game.time}</div>
+              <div className="game-row" style={{ paddingBottom: '10px', fontSize: '0.8rem' }}>
                   (Keski kenttä)
                </div>
               <div className="game-row" style={{ paddingBottom: '15px' }} >

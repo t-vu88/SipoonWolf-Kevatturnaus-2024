@@ -87,6 +87,65 @@ html {
   color: #181a1f;
   font-weight:bolder
 }
+.tab-button-lohko {
+  margin: 1vw; /* Use viewport width (vw) for margin */
+  padding: 3vw 5vw; /* Use viewport width (vw) for padding */
+  text-decoration: none;
+  color: white;
+  background-color: #181a1f;
+  border: 2px double #F0AE2E; /* Add border to all tabs */
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.tab-button-lohko.active {
+  background-color: #F0AE2E;
+  color: #181a1f;
+  border: none;
+  font-weight: bolder;
+}
+.tab-button-lohko:hover {
+  background-color: #F0AE2E;
+  color: #181a1f;
+  font-weight:bolder
+}
+.tab-button-sijoitus {
+  margin: 1vw; /* Use viewport width (vw) for margin */
+  padding: 3vw 5vw; /* Use viewport width (vw) for padding */
+  text-decoration: none;
+  color: white;
+  background-color: #181a1f;
+  border: 2px double #F0AE2E; /* Add border to all tabs */
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.tab-button-lohko:not(.active):hover {
+  background-color: #181a1f;
+  color: white;
+  font-weight: normal;
+}
+.tab-button-sijoitus.active {
+  background-color: #F0AE2E;
+  color: #181a1f;
+  border: none;
+  font-weight: bolder;
+}
+.tab-button-sijoitus:hover {
+  background-color: #F0AE2E;
+  color: #181a1f;
+  font-weight:bolder
+}
+.tab-button-sijoitus:not(.active):hover {
+  background-color: #181a1f;
+  color: white;
+  font-weight: normal;
+}
+.tab-buttons-container {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+}
 
 ul {
   list-style-type: none;
@@ -107,10 +166,12 @@ li {
 
 .team-list {
   display: flex;
+  padding-bottom: 20px;
 }
 
 .team {
   margin: 1vh; /* Adjust as needed */
+  font-size: 18px;
 }
 .team-logo {
   width: 30px; /* Set the width of the logo */
@@ -119,7 +180,7 @@ li {
 }
 .team-divider {
   width: 0.1rem; /* Adjust as needed */
-  height: 5vh; /* Adjust as needed */
+  height: 6vh; /* Adjust as needed */
   background-color: black;
   align-self: center;
 }
@@ -142,7 +203,9 @@ li {
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
 }
-
+.game-container{
+  padding : 10px 0px;
+}
 .team-names,
 .results {
   display: flex;
@@ -248,3 +311,4 @@ li {
 h2, h3{
   color: #F0AE2E;
 }
+

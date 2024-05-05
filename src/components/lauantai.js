@@ -365,11 +365,11 @@
           </div>
         {activeTabs.sijoituspelit && (
           <div className="game-container">
-            {quarterFinalsGames.map((game) => (
+            {quarterFinalsGames.map((game,index) => (
               <div className="game-info" key={game.id}>
                 <div className="game-row" style={{ paddingTop: '15px', paddingBottom: '5px' }}>Klo {game.time}</div>
                 <div className="game-row" style={{ paddingBottom: '15px', fontSize: '0.8rem' }}>
-                  ({'Lehvosen pääty'})
+                ({index % 2 === 0 ? 'Lehvosen pääty' : 'Kellopääty'})
                 </div>
                 <div className="game-row" style={{ paddingBottom: '15px' }}>
                   <table className="sijoituspeli">
@@ -397,7 +397,6 @@
         <div>
           <hr/>
           <h1 className='group'>U7</h1>
-          {/* Team list for U8 group A */}
           <div className="team-list">
             {teams.u7.map((team, index) => (
               <React.Fragment key={index}>
@@ -456,17 +455,17 @@
             </table>
             </div>
           )}
-          {/* If otteluohjelma A tab is active, render games info */}
+         
           {activeTabs.otteluohjelmaU7 && (
             <div>
               <h3>Otteluohjelma</h3>
-              {/* Games info for U8 lohko A */}
+             
               <div className="game-container">
             {games.u7.map((game) => (
               <div className="game-info" key={game.id}>
                 <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '5px' }}>Klo {game.time}</div>
                 <div className="game-row" style={{ paddingBottom: '15px', fontSize: '0.8rem' }}>
-                    (Kellopääty)
+                    (Keski kenttä)
                 </div>
                 <div className="game-row" style={{ paddingBottom: '15px' }} >
                   <table>

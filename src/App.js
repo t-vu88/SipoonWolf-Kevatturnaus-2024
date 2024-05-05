@@ -29,7 +29,7 @@ function App() {
             <Tab label="Pukukopit" tabName="pukukopit" />
             <Tab label="Turnausruokailu" tabName="ruokailu" />
             <Tab label=" Susi Kahvila" tabName="kahvila" />
-            <Tab label="Arpajaiset" tabName="arpajaiset" />
+            <Tab label="Arpajaiset ja onnenpyörä" tabName="arpajaiset" />
           </div>
           <Content />
         </div>

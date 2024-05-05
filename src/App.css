@@ -82,11 +82,11 @@ html {
   border: none;
   font-weight: bolder;
 }
-.tab-button:hover {
+/*.tab-button:hover {
   background-color: #F0AE2E;
   color: #181a1f;
   font-weight:bolder
-}
+}*/
 .tab-button-lohko {
   margin: 1vw; /* Use viewport width (vw) for margin */
   padding: 10px 20px; /* Use viewport width (vw) for padding */
@@ -276,7 +276,6 @@ li {
   .game-row{
     font-size: 17px;
   }
-  
 }
 .ranking-table {
   width: 100%;

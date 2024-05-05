@@ -123,7 +123,7 @@
       <div className="container">
         {/* U8 lohko A */}
         <div>
-          <h2 className='group'>U8 lohko A</h2>
+          <h1 className='group'>U8 Lohko A</h1>
           {/* Team list for U8 group A */}
           <div className="team-list">
             {teams.u8lohkoa.map((team, index) => (
@@ -237,9 +237,9 @@
             </div>
           )}
         </div>
-
+            <hr/>
         <div>
-          <h2 className='group'>U8 lohko B</h2>
+          <h1 className='group'>U8 Lohko B</h1>
           {/* Team list for U8 group A */}
           <div className="team-list">
             {teams.u8lohkob.map((team, index) => (
@@ -353,11 +353,11 @@
             </div>
           )}
         </div>
-
-        {/* U8 Sijoituspelit */}
+        <hr/>
         <div>
-          <hr/>
+        
         <div className="tab-buttons-container">
+          <h2> </h2>
         <button
             onClick={() => handleTabClick('sijoituspelit', 'otteluohjelma')}
             className={`tab-button-sijoitus ${activeTabs['sijoituspelit'] === 'otteluohjelma' ? 'active' : ''}`}
@@ -399,7 +399,7 @@
         {/* U7 */}
         <div>
           <hr />
-          <h2 className='group'>U7</h2>
+          <h1 className='group'>U7</h1>
           {/* Team list for U8 group A */}
           <div className="team-list">
             {teams.u7.map((team, index) => (

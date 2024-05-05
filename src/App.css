@@ -91,12 +91,13 @@ html {
   margin: 1vw; /* Use viewport width (vw) for margin */
   padding: 3vw 5vw; /* Use viewport width (vw) for padding */
   text-decoration: none;
-  color: white;
-  background-color: #181a1f;
-  border: 2px double #F0AE2E; /* Add border to all tabs */
-  border-radius: 2px;
+  color: black;
+  background-color: white;
+  border: 2px double black ; /* Add border to all tabs */
+  border-radius: 4px;
   cursor: pointer;
   font-size: 1rem;
+  font-weight: bold;
 }
 
 .tab-button-lohko.active {
@@ -114,17 +115,19 @@ html {
   margin: 1vw; /* Use viewport width (vw) for margin */
   padding: 3vw 5vw; /* Use viewport width (vw) for padding */
   text-decoration: none;
-  color: white;
-  background-color: #181a1f;
-  border: 2px double #F0AE2E; /* Add border to all tabs */
-  border-radius: 2px;
+  color:#181a1f;
+  background-color: white;
+  border: 2px double black ; 
+  font-weight: bold;/* Add border to all tabs */
+  border-radius: 4px;
   cursor: pointer;
   font-size: 1rem;
 }
 .tab-button-lohko:not(.active):hover {
-  background-color: #181a1f;
-  color: white;
-  font-weight: normal;
+  color: black;
+  background-color: white;
+  border: 2px double black ; 
+  font-weight: bold;
 }
 .tab-button-sijoitus.active {
   background-color: #F0AE2E;
@@ -138,13 +141,16 @@ html {
   font-weight:bolder
 }
 .tab-button-sijoitus:not(.active):hover {
-  background-color: #181a1f;
-  color: white;
-  font-weight: normal;
+  color: black;
+  background-color: white;
+  border: 2px double black ; 
+  font-weight: bold;
 }
 .tab-buttons-container {
   display: flex;
   justify-content: center; /* Center items horizontally */
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 ul {

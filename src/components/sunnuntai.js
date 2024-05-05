@@ -123,7 +123,7 @@ const quarterFinalsGames = [
     <div className="container">
       {/* U8 group A */}
       <div>
-          <h2 className='group'>U8 lohko A</h2>
+          <h1 className='group'>U8 Lohko A</h1>
           {/* Team list for U8 group A */}
           <div className="team-list">
             {teams.u8lohkoa.map((team, index) => (
@@ -238,10 +238,10 @@ const quarterFinalsGames = [
           )}
         </div>
 
-  
+  <hr/>
       {/* U8 group B */}
       <div>
-          <h2 className='group'>U8 lohko B</h2>
+          <h1 className='group'>U8 Lohko B</h1>
           {/* Team list for U8 group A */}
           <div className="team-list">
             {teams.u8lohkob.map((team, index) => (
@@ -311,7 +311,7 @@ const quarterFinalsGames = [
               <div className="game-info" key={game.id}>
                 <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '5px' }}>Klo {game.time}</div>
                 <div className="game-row" style={{ paddingBottom: '15px', fontSize: '0.8rem' }}>
-                    (Kellopääty)
+                    (Lehvosen pääty)
                 </div>
                 <div className="game-row" style={{ paddingBottom: '15px' }} >
                   <table>
@@ -401,7 +401,7 @@ const quarterFinalsGames = [
       {/* U7 */}
      <div>
           <hr />
-          <h2 className='group'>U7</h2>
+          <h1 className='group'>U7</h1>
           {/* Team list for U8 group A */}
           <div className="team-list">
             {teams.u7.map((team, index) => (
@@ -471,7 +471,7 @@ const quarterFinalsGames = [
               <div className="game-info" key={game.id}>
                 <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '5px' }}>Klo {game.time}</div>
                 <div className="game-row" style={{ paddingBottom: '15px', fontSize: '0.8rem' }}>
-                    (Kellopääty)
+                    (Keski kenttä)
                 </div>
                 <div className="game-row" style={{ paddingBottom: '15px' }} >
                   <table>
@@ -517,7 +517,6 @@ const quarterFinalsGames = [
         </div>
 
 <div>
-  <hr />
    <div className="tab-buttons-container">
         <button
             onClick={() => handleTabClick('sijoituspelitU7', 'otteluohjelma')}

@@ -89,7 +89,7 @@ html {
 }
 .tab-button-lohko {
   margin: 1vw; /* Use viewport width (vw) for margin */
-  padding: 3vw 5vw; /* Use viewport width (vw) for padding */
+  padding: 10px 20px; /* Use viewport width (vw) for padding */
   text-decoration: none;
   color: black;
   background-color: white;
@@ -173,6 +173,8 @@ li {
 .team-list {
   display: flex;
   padding-bottom: 20px;
+  justify-content: center;
+
 }
 
 .team {
@@ -318,3 +320,6 @@ h2, h3{
   color: #F0AE2E;
 }
 
+hr{
+  border: 1px dotted #F0AE2E;
+}

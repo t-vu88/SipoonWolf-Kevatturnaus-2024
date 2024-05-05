@@ -132,7 +132,6 @@
                   <img style={{ marginRight: '15px' }} src={team.logoUrl} alt={team.name} className="team-logo" /> {/* Display the team logo */}
                   {team.name}
                 </span>
-                {index !== teams.u8lohkoa.length - 1 && <hr className="team-divider" />}
               </React.Fragment>
             ))}
           </div>
@@ -248,7 +247,6 @@
                   <img style={{ marginRight: '15px' }} src={team.logoUrl} alt={team.name} className="team-logo" /> {/* Display the team logo */}
                   {team.name}
                 </span>
-                {index !== teams.u8lohkob.length - 1 && <hr className="team-divider" />}
               </React.Fragment>
             ))}
           </div>
@@ -353,11 +351,10 @@
             </div>
           )}
         </div>
-        <hr/>
+        <hr />
         <div>
         
         <div className="tab-buttons-container">
-          <h2> </h2>
         <button
             onClick={() => handleTabClick('sijoituspelit', 'otteluohjelma')}
             className={`tab-button-sijoitus ${activeTabs['sijoituspelit'] === 'otteluohjelma' ? 'active' : ''}`}
@@ -398,7 +395,7 @@
 
         {/* U7 */}
         <div>
-          <hr />
+          <hr/>
           <h1 className='group'>U7</h1>
           {/* Team list for U8 group A */}
           <div className="team-list">
@@ -408,7 +405,7 @@
                   <img style={{ marginRight: '15px' }} src={team.logoUrl} alt={team.name} className="team-logo" /> {/* Display the team logo */}
                   {team.name}
                 </span>
-                {index !== teams.u7.length - 1 && <hr className="team-divider" />}
+  
               </React.Fragment>
             ))}
           </div>

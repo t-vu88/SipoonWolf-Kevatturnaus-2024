@@ -5,6 +5,7 @@ import Ruokailu from './Ruokailu';
 import Pukukopit from './Pukukopit';
 import Kahvila from './Kahvila';
 import Arpajaiset from './Arpajaiset';
+import TurnausInfo from './TurnausInfo';
 import { useLocation } from 'react-router-dom';
 
 const Content = () => {
@@ -13,6 +14,7 @@ const Content = () => {
 
   return (
     <div>
+      {activeTab === 'turnausInfo' && <TurnausInfo/>}
       {activeTab === 'lauantai' && <Lauantai />}
       {activeTab === 'sunnuntai' && <Sunnuntai />}
       {activeTab === 'ruokailu' && <Ruokailu />}

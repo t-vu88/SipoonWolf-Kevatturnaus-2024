@@ -5,7 +5,7 @@ import Tab from './components/tab';
 import Content from './components/content';
 
 function App() {
-  const [currentTab, setCurrentTab] = useState('lauantai');
+  const [currentTab, setCurrentTab] = useState('');
 
   return (
     <Router>
@@ -23,10 +23,11 @@ function App() {
         </header>
         <div className="content-container">
           <div className="tabs">
-            <Tab label="Lauantai 18.05.24" tabName="lauantai" currentTab={currentTab} setCurrentTab={setCurrentTab} />
+            <Tab label="Turnaus-info" tabName="turnausInfo" currentTab={currentTab} setCurrentTab={setCurrentTab} />
+            <Tab label="Lauantai 18.05.24" tabName="lauantai"  />
             <Tab label="Sunnuntai 19.05.24" tabName="sunnuntai" />
             <Tab label="Pukukopit" tabName="pukukopit" />
-            <Tab label="Ruokailu" tabName="ruokailu" />
+            <Tab label="Turnausruokailu" tabName="ruokailu" />
             <Tab label=" Susi Kahvila" tabName="kahvila" />
             <Tab label="Arpajaiset" tabName="arpajaiset" />
           </div>

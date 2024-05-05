@@ -73,7 +73,7 @@ html {
   border: 1px solid #F0AE2E; /* Add border to all tabs */
   border-radius: 10px;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .tab-button.active {
@@ -260,7 +260,8 @@ li {
 @media screen and (max-width: 430px) {
   /* Further adjust the layout for screens smaller than 400px */
   .tab-button {
-    flex-basis: 90%; /* Each tab occupies 90% of the width to fit one tab in a row */
+    flex-basis: 80%; 
+    font-size:18px;/* Each tab occupies 90% of the width to fit one tab in a row */
   }
   .ranking-table td {
     border-bottom: 1px solid #ddd;
@@ -280,7 +281,7 @@ li {
 .ranking-table {
   width: 100%;
   border-collapse: collapse; 
-  border: 1px double white ;
+  border: 1px double #F0AE2E ;
    margin-bottom: 30px;
 }
 
@@ -321,5 +322,5 @@ h2, h3{
 }
 
 hr{
-  border: 1px dotted #F0AE2E;
+  border: 1px dotted whitesmoke;
 }

@@ -40,13 +40,13 @@
     const teams = {
       u8lohkoa: [
         { name: "Wolf Musta", logoUrl: "https://files.eliteprospects.com/layout/logos/f667f640-87d9-4879-b248-dde1387fac00_large.png" },
-        { name: "Salamat White", logoUrl: "https://scontent.fqlf1-2.fna.fbcdn.net/v/t39.30808-1/309048836_590434576208237_1242104477708606014_n.png?stp=c99.0.480.480a_dst-png_p480x480&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=1eiwrLQmBMUQ7kNvgHq5634&_nc_ht=scontent.fqlf1-2.fna&oh=00_AfCPuTTFjWh2TP3D0A0jvJEZ9GjvJCiR77q0ZwoNBXQJvQ&oe=663992CD" },
+        { name: "Salamat White", logoUrl: "https://upload.wikimedia.org/wikipedia/en/b/b1/HCK_Salamat_logo_2021.png" },
         { name: "Hunters Blue", logoUrl: "https://static.jopox.fi/hunters/logos/logo-600.png" },
         { name: "HJK Blue", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Helsingin_J%C3%A4%C3%A4kiekkoklubi_logo.png/240px-Helsingin_J%C3%A4%C3%A4kiekkoklubi_logo.png" }
       ],
       u8lohkob: [
         { name: "Wolf Keltainen", logoUrl: "https://files.eliteprospects.com/layout/logos/f667f640-87d9-4879-b248-dde1387fac00_large.png" },
-        { name: "Salamat Blue", logoUrl: "https://scontent.fqlf1-2.fna.fbcdn.net/v/t39.30808-1/309048836_590434576208237_1242104477708606014_n.png?stp=c99.0.480.480a_dst-png_p480x480&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=1eiwrLQmBMUQ7kNvgHq5634&_nc_ht=scontent.fqlf1-2.fna&oh=00_AfCPuTTFjWh2TP3D0A0jvJEZ9GjvJCiR77q0ZwoNBXQJvQ&oe=663992CD" },
+        { name: "Salamat Blue", logoUrl: "https://upload.wikimedia.org/wikipedia/en/b/b1/HCK_Salamat_logo_2021.png" },
         { name: "Hunters Yellow", logoUrl: "https://static.jopox.fi/hunters/logos/logo-600.png" },
         { name: "HJK White", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Helsingin_J%C3%A4%C3%A4kiekkoklubi_logo.png/240px-Helsingin_J%C3%A4%C3%A4kiekkoklubi_logo.png" }
       ],

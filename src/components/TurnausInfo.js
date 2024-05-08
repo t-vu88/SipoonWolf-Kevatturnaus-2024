@@ -8,6 +8,10 @@ const TurnausInfo = () => {
   const paragraphStyle1 = {
     fontSize:"17px"
   };
+  const linkStyle = {
+    color: 'white', // Change this color to the desired color for links
+    textDecoration: 'underline' // Add underline to make it look more like a traditional link
+  };
   return (
     <div>
       <di className ="introduction">
@@ -25,8 +29,8 @@ Hallin läheisyydessä on runsaasti pysäköintipaikkoja, joten saapuminen paika
 
 <p>Lopuksi haluamme kiittää lämpimästi tapahtuman sponsoreita, jotka ovat mahdollistaneet tämän upean turnauksen:</p>
 <ul style={{ paddingLeft: '20px', listStyleType: 'disc' }}>
-    <li>Corrector Oy</li>
-    <li>----</li>
+<li><a href="https://corrector.fi" style={linkStyle} >Corrector Oy</a></li>
+            <li><a href="https://www.mw-putki.fi" style={linkStyle} >Tapwell Oy/ MW-Putki Oy</a></li>
     <li>-----</li>
     </ul>
 

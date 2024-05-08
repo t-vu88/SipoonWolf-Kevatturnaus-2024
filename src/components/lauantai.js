@@ -53,7 +53,7 @@
       u7: [
         { name: "Wolf", logoUrl: "https://files.eliteprospects.com/layout/logos/f667f640-87d9-4879-b248-dde1387fac00_large.png" },
         { name: "Haki Blue", logoUrl: "https://upload.wikimedia.org/wikipedia/fi/thumb/b/b0/Haki-logo.png/500px-Haki-logo.png" },
-        { name: "HIFK Red", logoUrl: "https://hifk.fi/wp-content/themes/hifk/assets/images/ifk.svg" },
+        { name: "HIFK Red", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/HIFK-J%C3%A4%C3%A4kiekko.svg/300px-HIFK-J%C3%A4%C3%A4kiekko.svg.png" },
         { name: "Haki Black", logoUrl: "https://upload.wikimedia.org/wikipedia/fi/thumb/b/b0/Haki-logo.png/500px-Haki-logo.png" },
         { name: "Hunters U7", logoUrl: "https://static.jopox.fi/hunters/logos/logo-600.png" }
       ]

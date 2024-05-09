@@ -27,7 +27,8 @@ Hallin läheisyydessä on runsaasti pysäköintipaikkoja, joten saapuminen paika
 <ul style={{ paddingLeft: '20px', listStyleType: 'disc' }}>
 <li>Corrector Oy</li>
             <li>Tapwell Oy/ MW-Putki Oy</li>
-    <li>-----</li>
+    <li>Prodessendum Oy</li>
+    <li>AR Asennus Oy</li>
     </ul>
 
 <p>Lisätietoja turnauksesta ja sen ohjelmasta löydätte yllä olevista välilehdistä.</p>

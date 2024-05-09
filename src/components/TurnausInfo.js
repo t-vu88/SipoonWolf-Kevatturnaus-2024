@@ -8,10 +8,6 @@ const TurnausInfo = () => {
   const paragraphStyle1 = {
     fontSize:"17px"
   };
-  const linkStyle = {
-    color: 'white', // Change this color to the desired color for links
-    textDecoration: 'underline' // Add underline to make it look more like a traditional link
-  };
   return (
     <div>
       <di className ="introduction">

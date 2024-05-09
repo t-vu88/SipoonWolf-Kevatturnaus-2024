@@ -26,15 +26,15 @@
       ],
       u7: [
         { id: 1, time: '10:00', team1: 'Wolf', team2: 'Hunters U7', result1: 0, result2: 0 },
-        { id: 2, time: '10:40', team1: 'HIFK Red', team2: 'Haki Blue', result1: 0, result2: 0 },
-        { id: 3, time: '11:20', team1: 'Haki Blue', team2: 'Haki Black', result1: 0, result2: 0 },
-        { id: 4, time: '12:10', team1: 'HIFK Red', team2: 'Hunters U7', result1: 0, result2: 0 },
-        { id: 5, time: '12:50', team1: 'Wolf', team2: 'HIFK Red', result1: 0, result2: 0 },
-        { id: 6, time: '13:40', team1: 'Hunters U7', team2: 'Haki Black', result1: 0, result2: 0 },
-        { id: 7, time: '14:20', team1: 'Wolf', team2: 'Haki Blue', result1: 0, result2: 0 },
-        { id: 8, time: '15:10', team1: 'HIFK Red', team2: 'Haki Black', result1: 0, result2: 0 },
-        { id: 9, time: '15:50', team1: 'Wolf', team2: 'Haki Black', result1: 0, result2: 0 },
-        { id: 10, time: '15:50', team1: 'Haki Blue', team2: 'Hunters U7', result1: 0, result2: 0 },
+        { id: 2, time: '10:40', team1: 'HIFK Red', team2: 'Haki Black', result1: 0, result2: 0 },
+        { id: 3, time: '11:20', team1: 'Wolf', team2: 'Haki Blue', result1: 0, result2: 0 },
+        { id: 4, time: '12:00', team1: 'Hunters U7 ', team2: 'HIFK Red', result1: 0, result2: 0 },
+        { id: 5, time: '12:40', team1: 'Haki Black', team2: 'Haki Blue', result1: 0, result2: 0 },
+        { id: 6, time: '13:20', team1: 'Wolf', team2: 'HIFK Red', result1: 0, result2: 0 },
+        { id: 7, time: '14:00', team1: 'Hunter U7', team2: 'Haki Black', result1: 0, result2: 0 },
+        { id: 8, time: '15:00', team1: 'HIFK Red', team2: 'Haki Blue', result1: 0, result2: 0 },
+        { id: 9, time: '15:40', team1: 'Wolf', team2: 'Haki Black', result1: 0, result2: 0 },
+        { id: 10, time: '16:20', team1: 'Haki Blue', team2: 'Hunters U7', result1: 0, result2: 0 },
       ]
     };
     const teams = {

@@ -8,7 +8,7 @@ html {
 /* Use relative units for padding and margin */
 .App {
   background-color: #181a1f;
-  margin: 8vw 5vw; /* Use viewport width (vw) for margin */
+  margin: 8vw 6vw; /* Use viewport width (vw) for margin */
   color: white;
   position:relative;
 }
@@ -249,7 +249,7 @@ li {
 
   .tab-button {
     flex: 1 0 45%; /* Each tab occupies 45% of the width to fit two tabs in a row */
-    margin: 1vw; /* Adjust the margin for smaller screens */
+    margin: 1.5vw; /* Adjust the margin for smaller screens */
     padding: 1.5vw 2vw; /* Adjust the padding for smaller screens */
     font-size: 1rem; /* Adjust the font size for smaller screens */
   }

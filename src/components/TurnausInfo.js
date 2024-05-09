@@ -29,8 +29,8 @@ Hallin läheisyydessä on runsaasti pysäköintipaikkoja, joten saapuminen paika
 
 <p>Lopuksi haluamme kiittää lämpimästi tapahtuman sponsoreita, jotka ovat mahdollistaneet tämän upean turnauksen:</p>
 <ul style={{ paddingLeft: '20px', listStyleType: 'disc' }}>
-<li><a href="https://corrector.fi" style={linkStyle} >Corrector Oy</a></li>
-            <li><a href="https://www.mw-putki.fi" style={linkStyle} >Tapwell Oy/ MW-Putki Oy</a></li>
+<li>Corrector Oy</li>
+            <li>Tapwell Oy/ MW-Putki Oy</li>
     <li>-----</li>
     </ul>
 

@@ -40,16 +40,16 @@ const Sunnuntai = () => {
       { id: 2, time: '10:40', team1: 'HJK Blue', team2: 'Viikingit White', result1: 0, result2: 0 },
       { id: 3, time: '11:20', team1: 'Wolf Keltainen', team2: 'HJK Blue', result1: 0, result2: 0 },
       { id: 4, time: '12:00', team1: 'HIFK White', team2: 'Viikingit White', result1: 0, result2: 0 },
-      { id: 5, time: '13:20', team1: 'Wolf Keltainen', team2: 'Viikingit White', result1: 0, result2: 0 },
-      { id: 6, time: '14:00', team1: 'HIFK White', team2: 'HJK Blue', result1: 0, result2: 0 }
+      { id: 5, time: '14:00', team1: 'Wolf Keltainen', team2: 'Viikingit White', result1: 0, result2: 0 },
+      { id: 6, time: '14:40', team1: 'HIFK White', team2: 'HJK Blue', result1: 0, result2: 0 }
     ],
     u7: [
       { id: 1, time: '10:00', team1: 'Wolf', team2: 'Haki White', result1: 0, result2: 0 },
       { id: 2, time: '10:40', team1: 'HIFK White', team2: 'HIFK Blue', result1: 0, result2: 0 },
       { id: 3, time: '11:20', team1: 'Wolf', team2: 'HIFK White', result1: 0, result2: 0 },
       { id: 4, time: '12:00', team1: 'Haki White', team2: 'HIFK Blue', result1: 0, result2: 0 },
-      { id: 5, time: '13:20', team1: 'Wolf', team2: 'HIFK Blue', result1: 0, result2: 0 },
-      { id: 6, time: '14:00', team1: 'Haki White', team2: 'HIFK White', result1: 0, result2: 0 },
+      { id: 5, time: '14:00', team1: 'Wolf', team2: 'HIFK Blue', result1: 0, result2: 0 },
+      { id: 6, time: '14:40', team1: 'Haki White', team2: 'HIFK White', result1: 0, result2: 0 },
       
     ]
 };
@@ -61,8 +61,8 @@ const quarterFinalsGames = [
   { id: 4, time: '16:00', team1: 'A Lohko | sija 1', team2: 'B Lohko | sija 1', result1: 0, result2: 0 },
 ];
   const quarterFinalsGamesU7 = [
-    { time: "14:40", team1: '---', team2: '---', result1: 0, result2: 0 },
     { time: "15:20", team1: '---', team2: '---', result1: 0, result2: 0 },
+    { time: "16:00", team1: '---', team2: '---', result1: 0, result2: 0 },
     ];
 
   const calculateTeamStats = (groupId) => {

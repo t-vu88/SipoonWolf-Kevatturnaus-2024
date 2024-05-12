@@ -3,7 +3,8 @@ import React from 'react';
 const TurnausInfo = () => {
   const paragraphStyle = {
     color: '#F0AE2E', 
-    fontSize: '20px'
+    fontSize: '20px',
+    textAlign:'center'
   };
   const paragraphStyle1 = {
     fontSize:"17px"
@@ -11,7 +12,7 @@ const TurnausInfo = () => {
   return (
     <div>
       <di className ="introduction">
-            <p style={paragraphStyle}> Tervetuloa Sipoon Wolfin U7 ja U8 ikäluokan jännittävään ja innostavaan kevätturnaukseen Sipoossa!</p>
+            <h3 style={paragraphStyle}> Tervetuloa Sipoon Wolfin U7 ja U8 ikäluokan jännittävään ja innostavaan kevätturnaukseen Sipoossa!</h3>
             <div style={paragraphStyle1}>
                <p>Pelit pelataan Sipoon jäähallissa (Urheilutie 2, 04130 Sipoo). 
 Hallin läheisyydessä on runsaasti pysäköintipaikkoja, joten saapuminen paikalle autolla on vaivatonta.</p>
@@ -23,12 +24,10 @@ Hallin läheisyydessä on runsaasti pysäköintipaikkoja, joten saapuminen paika
   Kahviosta saa sekä suolaista että makeaa koko viikonlopun ajan, lisäksi on arpajaisia, onnenpyörää, lämäritutkaa sekä herkullista grillattua makkaraa.
   Hallilla on myös teroitusmahdollisuus hintaan 5 €/pari (tiedustelut kahviosta). </p>
 
-<p>Lopuksi haluamme kiittää lämpimästi tapahtuman sponsoreita, jotka ovat mahdollistaneet tämän upean turnauksen:</p>
+<p>Haluamme kiittää lämpimästi tapahtuman sponsoreita, jotka ovat mahdollistaneet tämän upean turnauksen:</p>
 <ul style={{ paddingLeft: '20px', listStyleType: 'disc' }}>
-<li>Corrector Oy</li>
-            <li>Tapwell Oy/ MW-Putki Oy</li>
+    <li>Corrector Oy</li>
     <li>Prodessendum Oy</li>
-    <li>AR Asennus Oy</li>
     </ul>
 
 <p>Lisätietoja turnauksesta ja sen ohjelmasta löydätte yllä olevista välilehdistä.</p>

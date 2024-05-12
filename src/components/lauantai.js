@@ -7,36 +7,6 @@ const Lauantai = () => {
     u7: null,
   });
 
-  const games = {
-    u8lohkoa: [
-      { id: 1, time: '10:00', team1: 'Wolf Musta', team2: 'Salamat White', result1: 0, result2: 0 },
-      { id: 2, time: '10:40', team1: 'Hunters Blue', team2: 'HJK Blue', result1: 0, result2: 0 },
-      { id: 3, time: '11:20', team1: 'Wolf Musta', team2: 'Hunters Blue', result1: 0, result2: 0 },
-      { id: 4, time: '12:10', team1: 'Salamat White', team2: 'HJK Blue', result1: 0, result2: 0 },
-      { id: 5, time: '12:50', team1: 'Wolf Musta', team2: 'HJK Blue', result1: 0, result2: 0 },
-      { id: 6, time: '13:40', team1: 'Salamat White', team2: 'Hunters Blue', result1: 0, result2: 0 }
-    ],
-    u8lohkob: [
-      { id: 1, time: '10:00', team1: 'Wolf Keltainen', team2: 'Salamat Blue', result1: 0, result2: 0 },
-      { id: 2, time: '10:40', team1: 'Hunters Yellow', team2: 'HJK White', result1: 0, result2: 0 },
-      { id: 3, time: '11:20', team1: 'Wolf Keltainen', team2: 'Hunters Yellow', result1: 0, result2: 0 },
-      { id: 4, time: '12:10', team1: 'Salamat Blue', team2: 'HJK White', result1: 0, result2: 0 },
-      { id: 5, time: '12:50', team1: 'Wolf Keltainen', team2: 'HJK White', result1: 0, result2: 0 },
-      { id: 6, time: '13:40', team1: 'Salamat Blue', team2: 'Hunters Yellow', result1: 0, result2: 0 }
-    ],
-    u7: [
-      { id: 1, time: '10:00', team1: 'Wolf', team2: 'Hunters U7', result1: 0, result2: 0 },
-      { id: 2, time: '10:40', team1: 'HIFK Red', team2: 'Haki Blue', result1: 0, result2: 0 },
-      { id: 3, time: '11:20', team1: 'Haki Blue', team2: 'Haki Black', result1: 0, result2: 0 },
-      { id: 4, time: '12:10', team1: 'HIFK Red', team2: 'Hunters U7', result1: 0, result2: 0 },
-      { id: 5, time: '12:50', team1: 'Wolf', team2: 'HIFK Red', result1: 0, result2: 0 },
-      { id: 6, time: '13:40', team1: 'Hunters U7', team2: 'Haki Black', result1: 0, result2: 0 },
-      { id: 7, time: '14:20', team1: 'Wolf', team2: 'Haki Blue', result1: 0, result2: 0 },
-      { id: 8, time: '15:10', team1: 'HIFK Red', team2: 'Haki Black', result1: 0, result2: 0 },
-      { id: 9, time: '15:50', team1: 'Wolf', team2: 'Haki Black', result1: 0, result2: 0 },
-      { id: 10, time: '15:50', team1: 'Haki Blue', team2: 'Hunters U7', result1: 0, result2: 0 },
-    ]
-  };
   const teams = {
     u8lohkoa: [
       { name: "Wolf Musta", logoUrl: "https://files.eliteprospects.com/layout/logos/f667f640-87d9-4879-b248-dde1387fac00_large.png" },
@@ -58,12 +28,43 @@ const Lauantai = () => {
       { name: "Hunters U7", logoUrl: "https://static.jopox.fi/hunters/logos/logo-600.png" }
     ]
   };
+  const games = {
+    u8lohkoa: [
+      { id: 1, time: '10:00', team1: 'Wolf Musta', team2: 'Salamat White', result1: 0, result2: 0 },
+      { id: 2, time: '10:40', team1: 'Hunters Blue', team2: 'HJK Blue', result1: 0, result2: 0 },
+      { id: 3, time: '11:20', team1: 'Wolf Musta', team2: 'Hunters Blue', result1: 0, result2: 0 },
+      { id: 4, time: '12:00', team1: 'Salamat White', team2: 'HJK Blue', result1: 0, result2: 0 },
+      { id: 5, time: '14:00', team1: 'Wolf Musta', team2: 'HJK Blue', result1: 0, result2: 0 },
+      { id: 6, time: '14:40', team1: 'Salamat White', team2: 'Hunters Blue', result1: 0, result2: 0 }
+    ],
+    u8lohkob: [
+      { id: 1, time: '10:00', team1: 'Wolf Keltainen', team2: 'Salamat Blue', result1: 0, result2: 0 },
+      { id: 2, time: '10:40', team1: 'Hunters Yellow', team2: 'HJK White', result1: 0, result2: 0 },
+      { id: 3, time: '11:20', team1: 'Wolf Keltainen', team2: 'Hunters Yellow', result1: 0, result2: 0 },
+      { id: 4, time: '12:00', team1: 'Salamat Blue', team2: 'HJK White', result1: 0, result2: 0 },
+      { id: 5, time: '14:00', team1: 'Wolf Keltainen', team2: 'HJK White', result1: 0, result2: 0 },
+      { id: 6, time: '14:40', team1: 'Salamat Blue', team2: 'Hunters Yellow', result1: 0, result2: 0 }
+    ],
+    u7: [
+      { id: 1, time: '10:00', team1: 'Wolf', team2: 'Haki Black', result1: 0, result2: 0 },
+      { id: 2, time: '10:40', team1: 'HIFK Red', team2: 'Haki Blue', result1: 0, result2: 0 },
+      { id: 3, time: '11:20', team1: 'Hunters U7', team2: 'Haki Blaack', result1: 0, result2: 0 },
+      { id: 4, time: '12:00', team1: 'Wolf', team2: 'HIFK Red', result1: 0, result2: 0 },
+      { id: 5, time: '13:20', team1: 'Hunters U7', team2: 'Haki Blue', result1: 0, result2: 0 },
+      { id: 6, time: '14:00', team1: 'HIFK Red', team2: 'Haki Black', result1: 0, result2: 0 },
+      { id: 7, time: '14:40', team1: 'Wolf', team2: 'Haki Blue', result1: 0, result2: 0 },
+      { id: 8, time: '15:20', team1: 'HIFK Red', team2: 'Hunters U7', result1: 0, result2: 0 },
+      { id: 9, time: '16:00', team1: 'Haki Blue', team2: 'Haki Black', result1: 0, result2: 0 },
+      { id: 10, time: '16:40', team1: 'Wolf', team2: 'Hunters U7', result1: 0, result2: 0 },
+    ]
+  };
+  
   // Define the quarter-finals games
   const quarterFinalsGames = [
-    { id: 1, time: '14:20', team1: 'A Lohko | sija 4', team2: 'B Lohko | sija 4', result1: 0, result2: 0 },
-    { id: 2, time: '14:20', team1: 'A Lohko | sija 3', team2: 'B Lohko | sija 3', result1: 0, result2: 0 },
-    { id: 3, time: '15:10', team1: 'A Lohko | sija 2', team2: 'B Lohko | sija 2', result1: 0, result2: 0 },
-    { id: 4, time: '15:10', team1: 'A Lohko | sija 1', team2: 'B Lohko | sija 1', result1: 0, result2: 0 },
+    { id: 1, time: '15:20', team1: 'A Lohko | sija 4', team2: 'B Lohko | sija 4', result1: 0, result2: 0 },
+    { id: 2, time: '15:20', team1: 'A Lohko | sija 3', team2: 'B Lohko | sija 3', result1: 0, result2: 0 },
+    { id: 3, time: '16:00', team1: 'A Lohko | sija 2', team2: 'B Lohko | sija 2', result1: 0, result2: 0 },
+    { id: 4, time: '16:00', team1: 'A Lohko | sija 1', team2: 'B Lohko | sija 1', result1: 0, result2: 0 },
   ];
 
   // Define the ranking table function

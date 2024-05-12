@@ -6,65 +6,63 @@ const Sunnuntai = () => {
     u8lohkoB: null,
     u7: null,
   });
-
+  const teams = {
+    u8lohkoa: [
+      { name: "Wolf Musta", logoUrl: "https://files.eliteprospects.com/layout/logos/f667f640-87d9-4879-b248-dde1387fac00_large.png" },
+      { name: "HIFK Red", logoUrl: "https://hifk.fi/wp-content/themes/hifk/assets/images/ifk.svg" },
+      { name: "HJK Black", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Helsingin_J%C3%A4%C3%A4kiekkoklubi_logo.png/240px-Helsingin_J%C3%A4%C3%A4kiekkoklubi_logo.png" },
+      { name: "Viikingit Red", logoUrl: "https://upload.wikimedia.org/wikipedia/fi/e/e3/Viikingit_HC_logo.png"}
+    ],
+    u8lohkob: [
+      { name: "Wolf Keltainen", logoUrl:"https://files.eliteprospects.com/layout/logos/f667f640-87d9-4879-b248-dde1387fac00_large.png" },
+      { name: "HIFK White", logoUrl: "https://hifk.fi/wp-content/themes/hifk/assets/images/ifk.svg"  },
+      { name: "HJK Blue", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Helsingin_J%C3%A4%C3%A4kiekkoklubi_logo.png/240px-Helsingin_J%C3%A4%C3%A4kiekkoklubi_logo.png"},
+      { name: "Viikingit White", logoUrl: "https://upload.wikimedia.org/wikipedia/fi/e/e3/Viikingit_HC_logo.png" }
+    ],
+    u7: [
+      { name: "Wolf", logoUrl: "https://files.eliteprospects.com/layout/logos/f667f640-87d9-4879-b248-dde1387fac00_large.png" },
+      { name: "Haki White", logoUrl: "https://upload.wikimedia.org/wikipedia/fi/thumb/b/b0/Haki-logo.png/500px-Haki-logo.png" },
+      { name: "HIFK White", logoUrl: "https://hifk.fi/wp-content/themes/hifk/assets/images/ifk.svg"  },
+      { name: "HIFK Blue", logoUrl: "https://hifk.fi/wp-content/themes/hifk/assets/images/ifk.svg"  }
+    ]
+  };
   const games = {
     u8lohkoa: [
       {id: 1, time: '10:00', team1: 'Wolf Musta', team2: 'HIFK Red', result1: 0, result2: 0 },
       { id: 2, time: '10:40', team1: 'HJK Black', team2: 'Viikingit Red', result1: 0, result2: 0 },
       { id: 3, time: '11:20', team1: 'Wolf Musta', team2: 'HJK Black', result1: 0, result2: 0 },
-      { id: 4, time: '12:10', team1: 'HIFK Red', team2: 'Viikingit Red', result1: 0, result2: 0 },
-      { id: 5, time: '12:50', team1: 'Wolf Musta', team2: 'Viikingit Red', result1: 0, result2: 0 },
-      { id: 6, time: '13:40', team1: 'HIFK Red', team2: 'HJK Black', result1: 0, result2: 0 }
+      { id: 4, time: '12:00', team1: 'HIFK Red', team2: 'Viikingit Red', result1: 0, result2: 0 },
+      { id: 5, time: '14:00', team1: 'Wolf Musta', team2: 'Viikingit Red', result1: 0, result2: 0 },
+      { id: 6, time: '14:40', team1: 'HIFK Red', team2: 'HJK Black', result1: 0, result2: 0 }
     ],
     u8lohkob: [
       { id: 1, time: '10:00', team1: 'Wolf Keltainen', team2: 'HIFK White', result1: 0, result2: 0 },
       { id: 2, time: '10:40', team1: 'HJK Blue', team2: 'Viikingit White', result1: 0, result2: 0 },
       { id: 3, time: '11:20', team1: 'Wolf Keltainen', team2: 'HJK Blue', result1: 0, result2: 0 },
-      { id: 4, time: '12:10', team1: 'HIFK White', team2: 'Viikingit White', result1: 0, result2: 0 },
-      { id: 5, time: '12:50', team1: 'Wolf Keltainen', team2: 'Viikingit White', result1: 0, result2: 0 },
-      { id: 6, time: '13:40', team1: 'HIFK White', team2: 'HJK Blue', result1: 0, result2: 0 }
+      { id: 4, time: '12:00', team1: 'HIFK White', team2: 'Viikingit White', result1: 0, result2: 0 },
+      { id: 5, time: '13:20', team1: 'Wolf Keltainen', team2: 'Viikingit White', result1: 0, result2: 0 },
+      { id: 6, time: '14:00', team1: 'HIFK White', team2: 'HJK Blue', result1: 0, result2: 0 }
     ],
     u7: [
       { id: 1, time: '10:00', team1: 'Wolf', team2: 'Haki White', result1: 0, result2: 0 },
       { id: 2, time: '10:40', team1: 'HIFK White', team2: 'HIFK Blue', result1: 0, result2: 0 },
       { id: 3, time: '11:20', team1: 'Wolf', team2: 'HIFK White', result1: 0, result2: 0 },
-      { id: 4, time: '12:10', team1: 'Haki White', team2: 'HIFK Blue', result1: 0, result2: 0 },
-      { id: 5, time: '12:50', team1: 'Wolf', team2: 'HIFK Blue', result1: 0, result2: 0 },
-      { id: 6, time: '13:40', team1: 'Haki White', team2: 'HIFK White', result1: 0, result2: 0 },
+      { id: 4, time: '12:00', team1: 'Haki White', team2: 'HIFK Blue', result1: 0, result2: 0 },
+      { id: 5, time: '13:20', team1: 'Wolf', team2: 'HIFK Blue', result1: 0, result2: 0 },
+      { id: 6, time: '14:00', team1: 'Haki White', team2: 'HIFK White', result1: 0, result2: 0 },
       
     ]
 };
 
-const teams = {
-  u8lohkoa: [
-    { name: "Wolf Musta", logoUrl: "https://files.eliteprospects.com/layout/logos/f667f640-87d9-4879-b248-dde1387fac00_large.png" },
-    { name: "HIFK Red", logoUrl: "https://hifk.fi/wp-content/themes/hifk/assets/images/ifk.svg" },
-    { name: "HJK Black", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Helsingin_J%C3%A4%C3%A4kiekkoklubi_logo.png/240px-Helsingin_J%C3%A4%C3%A4kiekkoklubi_logo.png" },
-    { name: "Viikingit Red", logoUrl: "https://upload.wikimedia.org/wikipedia/fi/e/e3/Viikingit_HC_logo.png"}
-  ],
-  u8lohkob: [
-    { name: "Wolf Keltainen", logoUrl:"https://files.eliteprospects.com/layout/logos/f667f640-87d9-4879-b248-dde1387fac00_large.png" },
-    { name: "HIFK White", logoUrl: "https://hifk.fi/wp-content/themes/hifk/assets/images/ifk.svg"  },
-    { name: "HJK Blue", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Helsingin_J%C3%A4%C3%A4kiekkoklubi_logo.png/240px-Helsingin_J%C3%A4%C3%A4kiekkoklubi_logo.png"},
-    { name: "Viikingit White", logoUrl: "https://upload.wikimedia.org/wikipedia/fi/e/e3/Viikingit_HC_logo.png" }
-  ],
-  u7: [
-    { name: "Wolf", logoUrl: "https://files.eliteprospects.com/layout/logos/f667f640-87d9-4879-b248-dde1387fac00_large.png" },
-    { name: "Haki White", logoUrl: "https://upload.wikimedia.org/wikipedia/fi/thumb/b/b0/Haki-logo.png/500px-Haki-logo.png" },
-    { name: "HIFK White", logoUrl: "https://hifk.fi/wp-content/themes/hifk/assets/images/ifk.svg"  },
-    { name: "HIFK Blue", logoUrl: "https://hifk.fi/wp-content/themes/hifk/assets/images/ifk.svg"  }
-  ]
-};
-
 const quarterFinalsGames = [
-  { id: 1, time: '14:20', team1: 'A Lohko | sija 4', team2: 'B Lohko | sija 4', result1: 0, result2: 0 },
-  { id: 2, time: '14:20', team1: 'A Lohko | sija 3', team2: 'B Lohko | sija 3', result1: 0, result2: 0 },
-  { id: 3, time: '15:10', team1: 'A Lohko | sija 2', team2: 'B Lohko | sija 2', result1: 0, result2: 0 },
-  { id: 4, time: '15:10', team1: 'A Lohko | sija 1', team2: 'B Lohko | sija 1', result1: 0, result2: 0 },
+  { id: 1, time: '15:20', team1: 'A Lohko | sija 4', team2: 'B Lohko | sija 4', result1: 0, result2: 0 },
+  { id: 2, time: '15:20', team1: 'A Lohko | sija 3', team2: 'B Lohko | sija 3', result1: 0, result2: 0 },
+  { id: 3, time: '16:00', team1: 'A Lohko | sija 2', team2: 'B Lohko | sija 2', result1: 0, result2: 0 },
+  { id: 4, time: '16:00', team1: 'A Lohko | sija 1', team2: 'B Lohko | sija 1', result1: 0, result2: 0 },
 ];
   const quarterFinalsGamesU7 = [
-    { time: "14:20", team1: '---', team2: '---', result1: 0, result2: 0 },
-    { time: "15:10", team1: '---', team2: '---', result1: 0, result2: 0 },
+    { time: "14:40", team1: '---', team2: '---', result1: 0, result2: 0 },
+    { time: "15:20", team1: '---', team2: '---', result1: 0, result2: 0 },
     ];
 
   const calculateTeamStats = (groupId) => {

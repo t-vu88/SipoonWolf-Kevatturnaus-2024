@@ -63,11 +63,12 @@ const Lamaritutka = () => {
 
   return (
     <div className="lämäritutka">
-      <h3 style={paragraphStyle}>Lämäritutka</h3>
+      <h4 style={paragraphStyle}> Tule testaamaan laukauksesi nopeutta ja voimaa   klo 11.00-15.00</h4>
       <div style={paragraphStyle1}>
         <p>
-          Tule testaamaan laukauksesi nopeutta ja voimaa. Lämäritutkassa on molempana turnauspäivänä vetokilpailu, jossa 2€:lla pääsee vetämään kolmesti.
-          Päivän kovin laukaus saa muhkean karkkiämpärin.
+          </p>
+        <p>Lämäritutkassa on molempana turnauspäivänä vetokilpailu, jossa 2€:lla pääsee vetämään kolmesti.
+          Päivän kovin laukaus jokaisesta ryhmästä  saa upean palkinnon.
         </p>
       </div>
       <div>

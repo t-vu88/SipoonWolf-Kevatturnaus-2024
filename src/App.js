@@ -30,6 +30,7 @@ function App() {
             <Tab label="Turnausruokailu" tabName="ruokailu" />
             <Tab label=" Susi Kahvila" tabName="kahvila" />
             <Tab label="Arpajaiset ja onnenpyörä" tabName="arpajaiset" />
+            <Tab label="Lämäritutka" tabName="lamaritutka" />
           </div>
           <Content />
         </div>

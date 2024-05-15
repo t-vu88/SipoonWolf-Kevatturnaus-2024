@@ -238,9 +238,12 @@ const Lauantai = () => {
         )}
       </div>
           <hr/>
+
+       {/* Team list for U8 group B */}
       <div>
+
         <h1 className='group'>U8 Lohko B</h1>
-        {/* Team list for U8 group A */}
+       
         <div className="team-list">
           {teams.u8lohkob.map((team, index) => (
             <React.Fragment key={index}>
@@ -308,7 +311,7 @@ const Lauantai = () => {
             <div className="game-info" key={game.id}>
               <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '5px' }}>Klo {game.time}</div>
               <div className="game-row" style={{ paddingBottom: '15px', fontSize: '0.8rem' }}>
-                  (Kellopääty)
+                  (Lehvosen pääty)
               </div>
               <div className="game-row" style={{ paddingBottom: '15px' }} >
                 <table>
@@ -353,6 +356,8 @@ const Lauantai = () => {
         )}
       </div>
       <hr />
+
+      {/* quaterfinal games */}
       <div>
       
       <div className="tab-buttons-container">

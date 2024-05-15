@@ -43,8 +43,8 @@ const lunchData = [
                     { time: "12:20", team: "HJK Blue" }, 
                     { time: "12:40", team: "Viikingit Red" },
                     { time: "12:40", team: "Viikingit White" },
-                    { time: "13:00", team: "HIFK White" },
-                    { time: "13:00", team: "HIFK red" },
+                    { time: "13:00", team: "HIFK White (U8)" },
+                    { time: "13:00", team: "HIFK Red" },
                    
                   
                 ]
@@ -53,9 +53,9 @@ const lunchData = [
                 location: "2.krs aula",
                 lunchTimes: [
                     { time: "12:00", team: "Wolf" },
-                    { time: "12:20", team: "HJK Blue" },
-                    { time: "12:40", team: "Haki White" },
-                    { time: "13:00", team: "HIFK Blue" }
+                    { time: "12:20", team: "HIFK White (U7)" },
+                    { time: "12:40", team: "HIFK Blue" },
+                    { time: "13:00", team: "Haki White" }
                    
                 ]
             }

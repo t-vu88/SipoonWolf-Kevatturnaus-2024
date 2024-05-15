@@ -6,6 +6,7 @@ import Pukukopit from './Pukukopit';
 import Kahvila from './Kahvila';
 import Arpajaiset from './Arpajaiset';
 import TurnausInfo from './TurnausInfo';
+import Lamaritutka from './Lamaritutka';
 import { useLocation } from 'react-router-dom';
 
 const Content = () => {
@@ -21,6 +22,7 @@ const Content = () => {
       {activeTab === 'pukukopit' && <Pukukopit />}
       {activeTab === 'kahvila' && <Kahvila />}
       {activeTab === 'arpajaiset' && <Arpajaiset />}
+      {activeTab === 'lamaritutka' && <Lamaritutka />}
     </div>
   );
 };

@@ -5,7 +5,8 @@ const Ruokailu = () => {
   const paragraphStyle = {
     color: 'white', // Example color
     lineHeight: '2',
-    fontSize:'18px'
+    fontSize:'18px',
+    textAlign:'center'
     // Add more styles as needed
   };
 

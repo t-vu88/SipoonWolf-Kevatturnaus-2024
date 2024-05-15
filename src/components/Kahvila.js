@@ -33,6 +33,7 @@ const Kahvila = () => {
         <ul style={{ paddingLeft: '15px', listStyleType: 'disc' }}>
           <li>Täytettyä sämpylää/leipää</li>
           <li>Kinkkupiirakka</li>
+          <li>Kasvikevätrullat</li>
           <li>Grillattu makkara</li>
           <li>Popcornia</li>
         </ul>

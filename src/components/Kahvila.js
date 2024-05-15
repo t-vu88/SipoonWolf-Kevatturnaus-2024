@@ -55,13 +55,6 @@ const Kahvila = () => {
 
 <p> </p>
       </div>
-
-      <h3 style={paragraphStyle}>Lämäritutka</h3>
-      <div style={paragraphStyle1}>
-      <p>Tule testaamaan laukauksesi nopeutta ja voimaa. 
-      Lämäritutkassa on molempana turnauspäivänä vetokilpailu, jossa 2€:lla pääsee vetämään kolmesti. 
-        Päivän kovin laukaus saa muhkean karkkiämpärin. </p>    
-      </div>
     </div>
   );
 };

@@ -20,13 +20,12 @@ const Arpajaiset = () => {
       Arpajaiset   </span> järjestetään kahvion vieressä.
  Yksi arpa maksaa 2€, ja kolme arpaa on sinun vain 5€:lla. Upeita Palkintoja mm.</p>
      <ul style={{ paddingLeft: '40px', listStyleType: 'disc' }}>
-        <li>SM-liiga pelajien maila</li>
-        <li>Tapwell - hana</li>
+        <li>SM-liiga pelajien mailoja</li>
         <li>Ravintolalahjakortteja</li>
         <li>Hierontalahjakortteja</li>
         <li>50€ nesteen polttoainelahjakortti</li>
-        <li>2kpl Ilmalämpöpumpun vuosihuolto lahjakorttia (arvo 220e/lahjakortti)</li>
-        <li>Risteilylahjakortteja</li>
+        <li>Ilmalämpöpumpun vuosihuolto lahjakortteja (arvo 220e)</li>
+        <li>Risteilylahjakortti</li>
 
         <p>... ja paljon muita kiinnostavia palkintoja.</p>
     </ul>
@@ -36,13 +35,13 @@ const Arpajaiset = () => {
         <li> Suomen yksi kaikkien aikojen parhaista maalivahdeista Pekka Rinteen allekirjoitamia kiekkoja</li>
         <li> Stanley Cup voittaja Antti Niemen allekirjoitamia kiekkoja</li>
         <li> SM-liiga konkari Joonas Vihkon allekirjoitamia kiekkoja </li>
+        <li> Käärijän allekirjoitamia kiekkoja </li>
         
-      
-      </ul>
+     </ul>
 
 
 
-    <h4 style={{ color:'white' }}>Älä jätä tilaisuuttasi käyttämättä – osta arpa, pyöritä onnenpyörä ja liity voittajien joukkoon!</h4>
+    <h4 style={{ color:'#F0AE2E' }}>Älä jätä tilaisuuttasi käyttämättä – osta arpa, pyöritä onnenpyörä ja liity voittajien joukkoon!</h4>
     </div>
     
   );

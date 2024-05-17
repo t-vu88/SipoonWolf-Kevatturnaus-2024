@@ -6,7 +6,7 @@ const lunchData = [
         day: "Lauantai",
         locations: [
             {
-                location: "Kokoustila 2.krs",
+                location: "U8 Joukkueet / Kokoustila 2.krs",
                 lunchTimes: [
                     { time: "12:00", team: "Wolf musta" },
                     { time: "12:00", team: "Wolf Keltainen" },
@@ -20,7 +20,7 @@ const lunchData = [
                 ]
             },
             {
-                location: "2.krs aula",
+                location: "U7 Joukkueet / 2.krs aula",
                 lunchTimes: [
                     { time: "11:40", team: "Haki Blue" },
                     { time: "12:00", team: "Haki Black" },
@@ -35,7 +35,7 @@ const lunchData = [
         day: "Sunnuntai",
         locations: [
             {
-                location: "Kokoustila 2.krs",
+                location: "U8 Joukkueet / Kokoustila 2.krs",
                 lunchTimes: [
                     { time: "12:00", team: "Wolf Musta" },
                     { time: "12:00", team: "Wolf Keltainen" },
@@ -50,7 +50,7 @@ const lunchData = [
                 ]
             },
             {
-                location: "2.krs aula",
+                location: " U7 Joukkueet / 2.krs aula",
                 lunchTimes: [
                     { time: "12:00", team: "Wolf" },
                     { time: "12:20", team: "HIFK White (U7)" },

@@ -18,8 +18,8 @@ const Kahvila = () => {
       
       <h3 style={paragraphStyle}>Tervetuloa herkuttelemaan turnauksen tauolla!</h3>
       <div style={paragraphStyle1}>
-      <p>Turnauskahvio palvelee hallin alakerrassa. Kahviosta voi ostaa lipukkeita ja niin lämäritutkaan kuin grillipisteellemme.</p>
-      <p> Kahviossa on myynnissä monipuolisesti makeita ja suolaisia herkkuja, esim:</p>
+      <p>Turnauskahvio palvelee hallin alakerrassa. Kahviosta voi ostaa lipukkeita arpajaisiin, onnenpyörään, lämäritutkaan ja grillipisteelle.</p>
+      <p> Kahviossa on myynnissä monipuolisesti makeita ja suolaisia herkkuja mm.</p>
 <table style={{ borderCollapse: 'collapse' }}>
   <thead>
     <tr>
@@ -32,20 +32,21 @@ const Kahvila = () => {
       <td style={cellStyle}>
         <ul style={{ paddingLeft: '15px', listStyleType: 'disc' }}>
           <li>Täytettyä sämpylää/leipää</li>
-          <li>Kinkkupiirakka</li>
+          <li>Kinkkupiirakkaa</li>
           <li>Kasvikevätrullat</li>
-          <li>Grillattu makkara</li>
+          <li>Grillattua makkaraa</li>
           <li>Popcornia</li>
+          yms...
         </ul>
       </td>
       <td style={cellStyle}>
         <ul style={{ paddingLeft: '15px', listStyleType: 'disc' }}>
           <li>Mokkapalaa</li>
           <li>Munkit</li>
-          <li>Donitsi</li>
-          <li>Mehujää</li>
-          <li>Mehukattivälipala</li>
-          <li>Limua / Urheilujuoma / Pillimehu</li>
+          <li>Donitsit</li>
+          <li>Mehujäät</li>
+          <li>Mehukattivälipalaa</li>
+          <li>Limua / Urheilujuomaa / Pillimehua</li>
         </ul>
       </td>
     </tr>

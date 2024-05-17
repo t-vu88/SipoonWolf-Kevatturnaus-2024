@@ -6,7 +6,6 @@ const Lauantai = () => {
     u8lohkoB: null,
     u7: null,
   });
-
   const teams = {
     u8lohkoa: [
       { name: "Wolf Musta", logoUrl: "https://files.eliteprospects.com/layout/logos/f667f640-87d9-4879-b248-dde1387fac00_large.png" },
@@ -28,6 +27,7 @@ const Lauantai = () => {
       { name: "Hunters U7", logoUrl: "https://static.jopox.fi/hunters/logos/logo-600.png" }
     ]
   };
+  /* you can add the result here, type carefully  */
   const games = {
     u8lohkoa: [
       { id: 1, time: '10:00', team1: 'Wolf Musta', team2: 'Salamat White', result1: 0, result2: 0 },

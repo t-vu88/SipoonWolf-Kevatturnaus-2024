@@ -1,9 +1,10 @@
 import React from 'react';
 
 const Lamaritutka = () => {
+      /* you can add the result here, type carefully  */
   const data = {
     u8: [
-      { name: 'Pelaaja ', speed: 0 },
+      { name: 'Pelaaja', speed: 0 },
       { name: 'Pelaaja ', speed: 0 },
       { name: 'Pelaaja', speed: 0 },
       { name: 'Pelaaja', speed: 0 },
@@ -56,7 +57,7 @@ const Lamaritutka = () => {
 
   return (
     <div className="lämäritutka">
-      <h4 style={paragraphStyle}> Tule testaamaan laukauksesi nopeutta ja voimaa   klo 11.00-15.00</h4>
+      <h4 style={paragraphStyle}> Tule testaamaan laukauksesi nopeutta ja voimaa  klo 11.00-15.00</h4>
       <div style={paragraphStyle1}>
         <p>
           </p>

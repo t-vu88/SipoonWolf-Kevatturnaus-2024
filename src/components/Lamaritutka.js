@@ -68,7 +68,7 @@ const Lamaritutka = () => {
         <p>
           </p>
         <p>Lämäritutkassa on molempana turnauspäivänä vetokilpailu, jossa 2€:lla pääsee vetämään kolmesti.
-          Päivän kovin laukaus jokaisesta ryhmästä  saa upean palkinnon.
+          Jokaisen ryhmän voittajalle palkinnoksi ämpärillinen herkkuja.
         </p>
       </div>
       <div>

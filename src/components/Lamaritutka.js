@@ -3,15 +3,8 @@ import React from 'react';
 const Lamaritutka = () => {
   const data = {
     u8: [
-      { name: 'Pelaja ', speed: 0 },
-      { name: 'Pelaja ', speed: 0 },
-      { name: 'Pelaaja', speed: 0 },
-      { name: 'Pelaaja', speed: 0 },
-      { name: 'Pelaaja', speed: 0 }
-    ],
-    u7: [
-      { name: 'Pelaaja', speed: 0 },
-      { name: 'Pelaaja', speed: 0 },
+      { name: 'Pelaaja ', speed: 0 },
+      { name: 'Pelaaja ', speed: 0 },
       { name: 'Pelaaja', speed: 0 },
       { name: 'Pelaaja', speed: 0 },
       { name: 'Pelaaja', speed: 0 }
@@ -68,12 +61,12 @@ const Lamaritutka = () => {
         <p>
           </p>
         <p>Lämäritutkassa on molempana turnauspäivänä vetokilpailu, jossa 2€:lla pääsee vetämään kolmesti.
-          Jokaisen ryhmän voittajalle palkinnoksi ämpärillinen herkkuja.
+           U7/U8-ryhmän voittajalle palkinnoksi ämpärillinen herkkuja ja Muut-ryhmän voittajalle palkinnoksi allekirjoitettu kiekko.
         </p>
       </div>
       <div>
-        {renderTable('U7', data.u7)}
-        {renderTable('U8', data.u8)}
+       
+        {renderTable('U7/U8', data.u8)}
         
         {renderTable('Muut', data.others)}
       </div>

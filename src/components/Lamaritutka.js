@@ -54,7 +54,7 @@ const Lamaritutka = () => {
   );
 
   const paragraphStyle = {
-    color: '#F0AE2E',
+    color: 'white',
     textAlign: 'center'
   };
   const paragraphStyle1 = {

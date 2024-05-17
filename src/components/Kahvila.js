@@ -43,7 +43,6 @@ const Kahvila = () => {
           <li>Mokkapalaa</li>
           <li>Munkit</li>
           <li>Donitsi</li>
-          <li>Karkit ja tikkarit</li>
           <li>Mehujää</li>
           <li>Mehukattivälipala</li>
           <li>Limua / Urheilujuoma / Pillimehu</li>

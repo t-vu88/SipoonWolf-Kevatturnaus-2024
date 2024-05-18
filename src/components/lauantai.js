@@ -35,7 +35,7 @@ const Lauantai = () => {
       { id: 3, time: '11:20', team1: 'Wolf Musta', team2: 'Hunters Blue', result1: 7, result2: 24 },
       { id: 4, time: '12:00', team1: 'Salamat White', team2: 'HJK Blue', result1: 12, result2: 17 },
       { id: 5, time: '14:00', team1: 'Wolf Musta', team2: 'HJK Blue', result1: 10, result2: 8 },
-      { id: 6, time: '14:40', team1: 'Salamat White', team2: 'Hunters Blue', result1: 0, result2: 0 }
+      { id: 6, time: '14:40', team1: 'Salamat White', team2: 'Hunters Blue', result1: 4, result2: 22 }
     ],
     u8lohkob: [
       { id: 1, time: '10:00', team1: 'Wolf Keltainen', team2: 'Salamat Blue', result1: 7, result2: 9 },
@@ -43,7 +43,7 @@ const Lauantai = () => {
       { id: 3, time: '11:20', team1: 'Wolf Keltainen', team2: 'Hunters Yellow', result1: 5, result2: 14 },
       { id: 4, time: '12:00', team1: 'Salamat Blue', team2: 'HJK White', result1: 4, result2: 14 },
       { id: 5, time: '14:00', team1: 'Wolf Keltainen', team2: 'HJK White', result1: 6, result2: 8 },
-      { id: 6, time: '14:40', team1: 'Salamat Blue', team2: 'Hunters Yellow', result1: 0, result2: 0 }
+      { id: 6, time: '14:40', team1: 'Salamat Blue', team2: 'Hunters Yellow', result1: 5, result2: 21}
     ],
     u7: [
       { id: 1, time: '10:00', team1: 'Wolf', team2: 'Haki Black', result1: 7, result2: 15 },
@@ -52,7 +52,7 @@ const Lauantai = () => {
       { id: 4, time: '12:00', team1: 'Wolf', team2: 'HIFK Red', result1: 7, result2: 20 },
       { id: 5, time: '13:20', team1: 'Hunters U7', team2: 'Haki Blue', result1: 17, result2: 1 },
       { id: 6, time: '14:00', team1: 'HIFK Red', team2: 'Haki Black', result1: 16, result2: 9 },
-      { id: 7, time: '14:40', team1: 'Wolf', team2: 'Haki Blue', result1: 0, result2: 0 },
+      { id: 7, time: '14:40', team1: 'Wolf', team2: 'Haki Blue', result1: 5, result2: 15 },
       { id: 8, time: '15:20', team1: 'HIFK Red', team2: 'Hunters U7', result1: 0, result2: 0 },
       { id: 9, time: '16:00', team1: 'Haki Blue', team2: 'Haki Black', result1: 0, result2: 0 },
       { id: 10, time: '16:40', team1: 'Wolf', team2: 'Hunters U7', result1: 0, result2: 0 },
@@ -61,7 +61,7 @@ const Lauantai = () => {
   
   // Define the quarter-finals games
   const quarterFinalsGames = [
-    { id: 1, time: '15:20', team1: 'A Lohko | sija 4', team2: 'B Lohko | sija 4', result1: 0, result2: 0 },
+    { id: 1, time: '15:20', team1: 'A Lohko | sija 4', team2: 'Wolf Keltainen', result1: 0, result2: 0 },
     { id: 2, time: '15:20', team1: 'A Lohko | sija 3', team2: 'B Lohko | sija 3', result1: 0, result2: 0 },
     { id: 3, time: '16:00', team1: 'A Lohko | sija 2', team2: 'B Lohko | sija 2', result1: 0, result2: 0 },
     { id: 4, time: '16:00', team1: 'A Lohko | sija 1', team2: 'B Lohko | sija 1', result1: 0, result2: 0 },

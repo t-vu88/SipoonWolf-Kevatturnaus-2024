@@ -54,8 +54,8 @@ const Lauantai = () => {
       { id: 6, time: '14:00', team1: 'HIFK Red', team2: 'Haki Black', result1: 16, result2: 9 },
       { id: 7, time: '14:40', team1: 'Wolf', team2: 'Haki Blue', result1: 5, result2: 15 },
       { id: 8, time: '15:20', team1: 'HIFK Red', team2: 'Hunters U7', result1: 8, result2: 9 },
-      { id: 9, time: '16:00', team1: 'Haki Blue', team2: 'Haki Black', result1: 0, result2: 0 },
-      { id: 10, time: '16:40', team1: 'Wolf', team2: 'Hunters U7', result1: 0, result2: 0 },
+      { id: 9, time: '16:00', team1: 'Haki Blue', team2: 'Haki Black', result1: 5, result2: 8 },
+      { id: 10, time: '16:40', team1: 'Wolf', team2: 'Hunters U7', result1: 4, result2: 16 },
     ]
   };
   

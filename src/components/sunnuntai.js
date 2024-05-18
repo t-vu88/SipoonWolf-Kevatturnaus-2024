@@ -57,12 +57,12 @@ const Sunnuntai = () => {
 const quarterFinalsGames = [
   { id: 1, time: '15:30', team1: 'A Lohko | sija 4', team2: 'B Lohko | sija 4', result1: 0, result2: 0 },
   { id: 2, time: '15:30', team1: 'A Lohko | sija 3', team2: 'B Lohko | sija 3', result1: 0, result2: 0 },
-  { id: 3, time: '16:10', team1: 'A Lohko | sija 2', team2: 'B Lohko | sija 2', result1: 0, result2: 0 },
-  { id: 4, time: '16:10', team1: 'A Lohko | sija 1', team2: 'B Lohko | sija 1', result1: 0, result2: 0 },
+  { id: 3, time: '16:20', team1: 'A Lohko | sija 2', team2: 'B Lohko | sija 2', result1: 0, result2: 0 },
+  { id: 4, time: '16:20', team1: 'A Lohko | sija 1', team2: 'B Lohko | sija 1', result1: 0, result2: 0 },
 ];
   const quarterFinalsGamesU7 = [
     { time: "15:30", team1: '---', team2: '---', result1: 0, result2: 0 },
-    { time: "16:10", team1: '---', team2: '---', result1: 0, result2: 0 },
+    { time: "16:20", team1: '---', team2: '---', result1: 0, result2: 0 },
     ];
 
   const calculateTeamStats = (groupId) => {
@@ -191,7 +191,7 @@ const quarterFinalsGames = [
               <div className="game-info" key={game.id}>
                 <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '5px' }}>Klo {game.time}</div>
                 <div className="game-row" style={{ paddingBottom: '15px', fontSize: '0.8rem' }}>
-                    (Kellopääty)
+                    (Lehvosen pääty)
                 </div>
                 <div className="game-row" style={{ paddingBottom: '15px' }} >
                   <table>
@@ -308,7 +308,7 @@ const quarterFinalsGames = [
               <div className="game-info" key={game.id}>
                 <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '5px' }}>Klo {game.time}</div>
                 <div className="game-row" style={{ paddingBottom: '15px', fontSize: '0.8rem' }}>
-                    (Lehvosen pääty)
+                    (Kellopääty)
                 </div>
                 <div className="game-row" style={{ paddingBottom: '15px' }} >
                   <table>

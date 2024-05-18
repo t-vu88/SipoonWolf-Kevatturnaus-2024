@@ -33,7 +33,7 @@ const Lauantai = () => {
       { id: 1, time: '10:00', team1: 'Wolf Musta', team2: 'Salamat White', result1: 14, result2: 12 },
       { id: 2, time: '10:40', team1: 'Hunters Blue', team2: 'HJK Blue', result1: 21, result2: 3 },
       { id: 3, time: '11:20', team1: 'Wolf Musta', team2: 'Hunters Blue', result1: 7, result2: 24 },
-      { id: 4, time: '12:00', team1: 'Salamat White', team2: 'HJK Blue', result1: 0, result2: 0 },
+      { id: 4, time: '12:00', team1: 'Salamat White', team2: 'HJK Blue', result1: 12, result2: 17 },
       { id: 5, time: '14:00', team1: 'Wolf Musta', team2: 'HJK Blue', result1: 0, result2: 0 },
       { id: 6, time: '14:40', team1: 'Salamat White', team2: 'Hunters Blue', result1: 0, result2: 0 }
     ],
@@ -41,7 +41,7 @@ const Lauantai = () => {
       { id: 1, time: '10:00', team1: 'Wolf Keltainen', team2: 'Salamat Blue', result1: 7, result2: 9 },
       { id: 2, time: '10:40', team1: 'Hunters Yellow', team2: 'HJK White', result1: 9, result2: 3 },
       { id: 3, time: '11:20', team1: 'Wolf Keltainen', team2: 'Hunters Yellow', result1: 5, result2: 14 },
-      { id: 4, time: '12:00', team1: 'Salamat Blue', team2: 'HJK White', result1: 0, result2: 0 },
+      { id: 4, time: '12:00', team1: 'Salamat Blue', team2: 'HJK White', result1: 4, result2: 14 },
       { id: 5, time: '14:00', team1: 'Wolf Keltainen', team2: 'HJK White', result1: 0, result2: 0 },
       { id: 6, time: '14:40', team1: 'Salamat Blue', team2: 'Hunters Yellow', result1: 0, result2: 0 }
     ],
@@ -49,7 +49,7 @@ const Lauantai = () => {
       { id: 1, time: '10:00', team1: 'Wolf', team2: 'Haki Black', result1: 7, result2: 15 },
       { id: 2, time: '10:40', team1: 'HIFK Red', team2: 'Haki Blue', result1: 15, result2: 0 },
       { id: 3, time: '11:20', team1: 'Hunters U7', team2: 'Haki Black', result1: 11, result2: 8 },
-      { id: 4, time: '12:00', team1: 'Wolf', team2: 'HIFK Red', result1: 0, result2: 0 },
+      { id: 4, time: '12:00', team1: 'Wolf', team2: 'HIFK Red', result1: 7, result2: 20 },
       { id: 5, time: '13:20', team1: 'Hunters U7', team2: 'Haki Blue', result1: 0, result2: 0 },
       { id: 6, time: '14:00', team1: 'HIFK Red', team2: 'Haki Black', result1: 0, result2: 0 },
       { id: 7, time: '14:40', team1: 'Wolf', team2: 'Haki Blue', result1: 0, result2: 0 },

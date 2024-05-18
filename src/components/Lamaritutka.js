@@ -4,7 +4,7 @@ const Lamaritutka = () => {
       /* you can add the result here, type carefully  */
   const data = {
     u8: [
-      { name: 'Pelaaja', speed: 0 },
+      { name: 'Mikael Beckström', speed: 88 },
       { name: 'Pelaaja ', speed: 0 },
       { name: 'Pelaaja', speed: 0 },
       { name: 'Pelaaja', speed: 0 },

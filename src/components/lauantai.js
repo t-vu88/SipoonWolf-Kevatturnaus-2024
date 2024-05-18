@@ -382,11 +382,23 @@ const Lauantai = () => {
                   <tbody>
                     <tr>
                       <td className="team-name">{game.team1}</td>
+                      <img
+                          src={teams.u8lohkoa.find(team => team.name === game.team1)?.logoUrl}
+                          alt={game.team1}
+                          className="team-logo"
+                        />
                       <td>-</td>
+                      <img
+                          src={teams.u8lohkob.find(team => team.name === game.team2)?.logoUrl}
+                          alt={game.team1}
+                          className="team-logo"
+                        />
                       <td className="team-name">{game.team2}</td>
                     </tr>
                     <tr>
                       <td>{game.result1}</td>
+                      <td></td>
+                      <td></td>
                       <td></td>
                       <td>{game.result2}</td>
                     </tr>

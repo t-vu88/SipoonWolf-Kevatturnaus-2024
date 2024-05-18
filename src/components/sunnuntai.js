@@ -55,14 +55,14 @@ const Sunnuntai = () => {
 };
 
 const quarterFinalsGames = [
-  { id: 1, time: '15:20', team1: 'A Lohko | sija 4', team2: 'B Lohko | sija 4', result1: 0, result2: 0 },
-  { id: 2, time: '15:20', team1: 'A Lohko | sija 3', team2: 'B Lohko | sija 3', result1: 0, result2: 0 },
-  { id: 3, time: '16:00', team1: 'A Lohko | sija 2', team2: 'B Lohko | sija 2', result1: 0, result2: 0 },
-  { id: 4, time: '16:00', team1: 'A Lohko | sija 1', team2: 'B Lohko | sija 1', result1: 0, result2: 0 },
+  { id: 1, time: '15:30', team1: 'A Lohko | sija 4', team2: 'B Lohko | sija 4', result1: 0, result2: 0 },
+  { id: 2, time: '15:30', team1: 'A Lohko | sija 3', team2: 'B Lohko | sija 3', result1: 0, result2: 0 },
+  { id: 3, time: '16:10', team1: 'A Lohko | sija 2', team2: 'B Lohko | sija 2', result1: 0, result2: 0 },
+  { id: 4, time: '16:10', team1: 'A Lohko | sija 1', team2: 'B Lohko | sija 1', result1: 0, result2: 0 },
 ];
   const quarterFinalsGamesU7 = [
-    { time: "15:20", team1: '---', team2: '---', result1: 0, result2: 0 },
-    { time: "16:00", team1: '---', team2: '---', result1: 0, result2: 0 },
+    { time: "15:30", team1: '---', team2: '---', result1: 0, result2: 0 },
+    { time: "16:10", team1: '---', team2: '---', result1: 0, result2: 0 },
     ];
 
   const calculateTeamStats = (groupId) => {
@@ -374,20 +374,30 @@ const quarterFinalsGames = [
                 ({index % 2 === 0 ? 'Lehvosen pääty' : 'Kellopääty'})
                 </div>
                 <div className="game-row" style={{ paddingBottom: '15px' }}>
-                  <table className="sijoituspeli">
-                    <tbody>
-                      <tr>
-                        <td className="team-name">{game.team1}</td>
-                        <td>-</td>
-                        <td className="team-name">{game.team2}</td>
-                      </tr>
-                      <tr>
-                        <td>{game.result1}</td>
-                        <td></td>
-                        <td>{game.result2}</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <table className="sijoituspeli">
+                  <tbody>
+                    <tr>
+                      <td className="team-name">{game.team1}</td>
+                     {/* <img
+                          src={teams.u8lohkoa.find(team => team.name === game.team1)?.logoUrl}
+                          className="team-logo"
+            />*/}
+                      <td>-</td>
+                     {/* <img
+                          src={teams.u8lohkob.find(team => team.name === game.team2)?.logoUrl}
+                          className="team-logo"
+          /> */}
+                      <td className="team-name">{game.team2}</td>
+                    </tr>
+                    <tr>
+                      <td>{game.result1}</td>
+                      {/*<td></td
+                      <td></td>*/ }
+                      <td></td>
+                      <td>{game.result2}</td>
+                    </tr>
+                  </tbody>
+                </table>
                 </div>
               </div>
             ))}
@@ -532,20 +542,30 @@ const quarterFinalsGames = [
                 (Keski kenttä)
                 </div>
                 <div className="game-row" style={{ paddingBottom: '15px' }}>
-                  <table className="sijoituspeli">
-                    <tbody>
-                      <tr>
-                        <td className="team-name">{game.team1}</td>
-                        <td>-</td>
-                        <td className="team-name">{game.team2}</td>
-                      </tr>
-                      <tr>
-                        <td>{game.result1}</td>
-                        <td></td>
-                        <td>{game.result2}</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <table className="sijoituspeli">
+                  <tbody>
+                    <tr>
+                      <td className="team-name">{game.team1}</td>
+                     {/* <img
+                          src={teams.u7.find(team => team.name === game.team1)?.logoUrl}
+                          className="team-logo"
+            />*/}
+                      <td>-</td>
+                     {/* <img
+                          src={teams.u7.find(team => team.name === game.team2)?.logoUrl}
+                          className="team-logo"
+          /> */}
+                      <td className="team-name">{game.team2}</td>
+                    </tr>
+                    <tr>
+                      <td>{game.result1}</td>
+                      {/*<td></td
+                      <td></td>*/ }
+                      <td></td>
+                      <td>{game.result2}</td>
+                    </tr>
+                  </tbody>
+                </table>
                 </div>
               </div>
             ))}

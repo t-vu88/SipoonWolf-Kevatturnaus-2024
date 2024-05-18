@@ -63,8 +63,8 @@ const Lauantai = () => {
   const quarterFinalsGames = [
     { id: 1, time: '15:20', team1: 'Salamat White', team2: 'Wolf Keltainen', result1: 10, result2: 7 },
     { id: 2, time: '15:20', team1: 'HJK Blue', team2: 'Salamat Blue', result1: 12, result2: 19 },
-    { id: 3, time: '16:00', team1: 'Wolf Musta', team2: 'HJK White', result1: 0, result2: 0 },
-    { id: 4, time: '16:00', team1: 'Hunters Blue', team2: 'Hunters Yellow', result1: 0, result2: 0 },
+    { id: 3, time: '16:00', team1: 'Wolf Musta', team2: 'HJK White', result1: 4, result2: 10 },
+    { id: 4, time: '16:00', team1: 'Hunters Blue', team2: 'Hunters Yellow', result1: 11, result2: 10 },
   ];
 
   // Define the ranking table function

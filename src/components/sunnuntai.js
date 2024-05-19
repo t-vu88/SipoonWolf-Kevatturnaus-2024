@@ -56,8 +56,8 @@ const Sunnuntai = () => {
 };
 
 const quarterFinalsGames = [
-  { id: 1, time: '15:30', team1: 'A Lohko | sija 4', team2: 'B Lohko | sija 4', result1: 0, result2: 0 },
-  { id: 2, time: '15:30', team1: 'A Lohko | sija 3', team2: 'B Lohko | sija 3', result1: 0, result2: 0 },
+  { id: 1, time: '15:30', team1: 'Wolf Musta', team2: 'Viikingit White', result1: 0, result2: 0 },
+  { id: 2, time: '15:30', team1: 'Viikingit Red', team2: 'Wolf Keltainen', result1: 0, result2: 0 },
   { id: 3, time: '16:20', team1: 'A Lohko | sija 2', team2: 'B Lohko | sija 2', result1: 0, result2: 0 },
   { id: 4, time: '16:20', team1: 'A Lohko | sija 1', team2: 'B Lohko | sija 1', result1: 0, result2: 0 },
 ];
@@ -379,15 +379,15 @@ const quarterFinalsGames = [
                   <tbody>
                     <tr>
                       <td className="team-name">{game.team1}</td>
-                     {/* <img
+                      <img
                           src={teams.u8lohkoa.find(team => team.name === game.team1)?.logoUrl}
                           className="team-logo"
-            />*/}
+            />
                       <td>-</td>
-                     {/* <img
+                     <img
                           src={teams.u8lohkob.find(team => team.name === game.team2)?.logoUrl}
                           className="team-logo"
-          /> */}
+          />
                       <td className="team-name">{game.team2}</td>
                     </tr>
                     <tr>

@@ -394,8 +394,8 @@ const quarterFinalsGames = [
                     </tr>
                     <tr>
                       <td>{game.result1}</td>
-                      {/*<td></td
-                      <td></td>*/ }
+                      <td></td>
+                      <td></td>
                       <td></td>
                       <td>{game.result2}</td>
                     </tr>

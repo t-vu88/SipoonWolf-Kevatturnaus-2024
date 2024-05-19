@@ -37,7 +37,7 @@ const Sunnuntai = () => {
     ],
     u7: [
       { id: 1, time: '10:00', team1: 'Wolf', team2: 'Haki White', result1: 6, result2: 18 },
-      { id: 2, time: '10:40', team1: 'HIFK White', team2: 'HIFK Blue', result1: 3, result2: 7 },
+      { id: 2, time: '10:40', team1: 'HIFK White', team2: 'HIFK Blue', result1: 7, result2: 3 },
       { id: 3, time: '11:20', team1: 'Wolf', team2: 'HIFK White', result1: 5, result2: 16 },
       { id: 4, time: '12:00', team1: 'Haki White', team2: 'HIFK Blue', result1: 0, result2: 0 },
       { id: 5, time: '14:00', team1: 'Wolf', team2: 'HIFK Blue', result1: 0, result2: 0 },

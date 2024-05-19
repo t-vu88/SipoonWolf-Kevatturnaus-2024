@@ -32,7 +32,7 @@ const Sunnuntai = () => {
       { id: 2, time: '10:40', team1: 'HJK Black', team2: 'Viikingit Red', result1: 26, result2: 2 },
       { id: 3, time: '11:20', team1: 'Wolf Musta', team2: 'HJK Black', result1: 7, result2: 13 },
       { id: 4, time: '12:00', team1: 'HIFK Red', team2: 'Viikingit Red', result1: 29, result2: 0 },
-      { id: 5, time: '14:00', team1: 'Wolf Musta', team2: 'Viikingit Red', result1: 0, result2: 0 },
+      { id: 5, time: '14:00', team1: 'Wolf Musta', team2: 'Viikingit Red', result1: 24, result2: 4 },
       { id: 6, time: '14:40', team1: 'HIFK Red', team2: 'HJK Black', result1: 0, result2: 0 }
     ],
     u7: [
@@ -40,7 +40,7 @@ const Sunnuntai = () => {
       { id: 2, time: '10:40', team1: 'HIFK White', team2: 'HIFK Blue', result1: 7, result2: 3 },
       { id: 3, time: '11:20', team1: 'Wolf', team2: 'HIFK White', result1: 5, result2: 16 },
       { id: 4, time: '12:00', team1: 'Haki White', team2: 'HIFK Blue', result1: 2, result2: 15 },
-      { id: 5, time: '14:00', team1: 'Wolf', team2: 'HIFK Blue', result1: 0, result2: 0 },
+      { id: 5, time: '14:00', team1: 'Wolf', team2: 'HIFK Blue', result1: 7, result2: 17 },
       { id: 6, time: '14:40', team1: 'Haki White', team2: 'HIFK White', result1: 0, result2: 0 },
       
     ],
@@ -49,7 +49,7 @@ const Sunnuntai = () => {
       { id: 2, time: '10:40', team1: 'HJK Blue', team2: 'Viikingit White', result1: 21, result2: 2 },
       { id: 3, time: '11:20', team1: 'Wolf Keltainen', team2: 'HJK Blue', result1: 6, result2: 16 },
       { id: 4, time: '12:00', team1: 'HIFK White', team2: 'Viikingit White', result1: 35, result2: 2 },
-      { id: 5, time: '14:00', team1: 'Wolf Keltainen', team2: 'Viikingit White', result1: 0, result2: 0 },
+      { id: 5, time: '14:00', team1: 'Wolf Keltainen', team2: 'Viikingit White', result1: 16, result2: 2 },
       { id: 6, time: '14:40', team1: 'HIFK White', team2: 'HJK Blue', result1: 0, result2: 0 }
     ],
   

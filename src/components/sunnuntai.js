@@ -372,7 +372,7 @@ const quarterFinalsGames = [
               <div className="game-info" key={game.id}>
                 <div className="game-row" style={{ paddingTop: '15px', paddingBottom: '5px' }}>Klo {game.time}</div>
                 <div className="game-row" style={{ paddingBottom: '15px', fontSize: '0.8rem' }}>
-                ({index % 2 === 0 ? 'Lehvosen pääty' : 'Kellopääty'})
+                ({index % 2 === 0 ? 'Kellopääty' : 'Lehvosen pääty'})
                 </div>
                 <div className="game-row" style={{ paddingBottom: '15px' }}>
                 <table className="sijoituspeli">

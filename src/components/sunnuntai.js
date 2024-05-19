@@ -33,7 +33,7 @@ const Sunnuntai = () => {
       { id: 3, time: '11:20', team1: 'Wolf Musta', team2: 'HJK Black', result1: 7, result2: 13 },
       { id: 4, time: '12:00', team1: 'HIFK Red', team2: 'Viikingit Red', result1: 29, result2: 0 },
       { id: 5, time: '14:00', team1: 'Wolf Musta', team2: 'Viikingit Red', result1: 24, result2: 4 },
-      { id: 6, time: '14:40', team1: 'HIFK Red', team2: 'HJK Black', result1: 0, result2: 0 }
+      { id: 6, time: '14:40', team1: 'HIFK Red', team2: 'HJK Black', result1: 11, result2: 5 }
     ],
     u7: [
       { id: 1, time: '10:00', team1: 'Wolf', team2: 'Haki White', result1: 6, result2: 18 },
@@ -41,7 +41,7 @@ const Sunnuntai = () => {
       { id: 3, time: '11:20', team1: 'Wolf', team2: 'HIFK White', result1: 5, result2: 16 },
       { id: 4, time: '12:00', team1: 'Haki White', team2: 'HIFK Blue', result1: 2, result2: 15 },
       { id: 5, time: '14:00', team1: 'Wolf', team2: 'HIFK Blue', result1: 7, result2: 17 },
-      { id: 6, time: '14:40', team1: 'Haki White', team2: 'HIFK White', result1: 0, result2: 0 },
+      { id: 6, time: '14:40', team1: 'Haki White', team2: 'HIFK White', result1: 6, result2: 12 },
       
     ],
     u8lohkob: [
@@ -50,7 +50,7 @@ const Sunnuntai = () => {
       { id: 3, time: '11:20', team1: 'Wolf Keltainen', team2: 'HJK Blue', result1: 6, result2: 16 },
       { id: 4, time: '12:00', team1: 'HIFK White', team2: 'Viikingit White', result1: 35, result2: 2 },
       { id: 5, time: '14:00', team1: 'Wolf Keltainen', team2: 'Viikingit White', result1: 16, result2: 2 },
-      { id: 6, time: '14:40', team1: 'HIFK White', team2: 'HJK Blue', result1: 0, result2: 0 }
+      { id: 6, time: '14:40', team1: 'HIFK White', team2: 'HJK Blue', result1: 11, result2: 6 }
     ],
   
 };
@@ -62,8 +62,8 @@ const quarterFinalsGames = [
   { id: 4, time: '16:20', team1: 'A Lohko | sija 1', team2: 'B Lohko | sija 1', result1: 0, result2: 0 },
 ];
   const quarterFinalsGamesU7 = [
-    { time: "15:30", team1: '---', team2: '---', result1: 0, result2: 0 },
-    { time: "16:20", team1: '---', team2: '---', result1: 0, result2: 0 },
+    { time: "15:30", team1: 'Wolf', team2: 'Haki White', result1: 0, result2: 0 },
+    { time: "16:20", team1: 'HIFK White', team2: 'HIFK Blue', result1: 0, result2: 0 },
     ];
 
   const calculateTeamStats = (groupId) => {
@@ -388,7 +388,7 @@ const quarterFinalsGames = [
                      <img
                           src={teams.u8lohkob.find(team => team.name === game.team2)?.logoUrl}
                           className="team-logo"
-                          alt={game.team1}
+                          alt={game.team2}
           />
                       <td className="team-name">{game.team2}</td>
                     </tr>
@@ -549,21 +549,23 @@ const quarterFinalsGames = [
                   <tbody>
                     <tr>
                       <td className="team-name">{game.team1}</td>
-                     {/* <img
+                 <img
                           src={teams.u7.find(team => team.name === game.team1)?.logoUrl}
                           className="team-logo"
-            />*/}
+                          alt={game.team1}
+            />
                       <td>-</td>
-                     {/* <img
+                     <img
                           src={teams.u7.find(team => team.name === game.team2)?.logoUrl}
                           className="team-logo"
-          /> */}
+                          alt={game.team2}
+          /> 
                       <td className="team-name">{game.team2}</td>
                     </tr>
                     <tr>
                       <td>{game.result1}</td>
-                      {/*<td></td
-                      <td></td>*/ }
+                      <td></td>
+                      <td></td>
                       <td></td>
                       <td>{game.result2}</td>
                     </tr>

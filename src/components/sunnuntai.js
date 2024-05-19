@@ -58,12 +58,12 @@ const Sunnuntai = () => {
 const quarterFinalsGames = [
   { id: 1, time: '15:30', team1: 'Wolf Musta', team2: 'Viikingit White', result1: 15, result2: 2 },
   { id: 2, time: '15:30', team1: 'Viikingit Red', team2: 'Wolf Keltainen', result1: 2, result2: 17 },
-  { id: 3, time: '16:20', team1: 'HJK Black', team2: 'HJK Blue', result1: 0, result2: 0 },
-  { id: 4, time: '16:20', team1: 'HIFK Red', team2: 'HIFK White', result1: 0, result2: 0 },
+  { id: 3, time: '16:20', team1: 'HJK Black', team2: 'HJK Blue', result1: 6, result2: 13},
+  { id: 4, time: '16:20', team1: 'HIFK Red', team2: 'HIFK White', result1: 12, result2: 8 },
 ];
   const quarterFinalsGamesU7 = [
     { time: "15:30", team1: 'Wolf', team2: 'Haki White', result1: 6, result2: 10 },
-    { time: "16:20", team1: 'HIFK White', team2: 'HIFK Blue', result1: 0, result2: 0 },
+    { time: "16:20", team1: 'HIFK White', team2: 'HIFK Blue', result1: 19, result2: 9 },
     ];
 
   const calculateTeamStats = (groupId) => {

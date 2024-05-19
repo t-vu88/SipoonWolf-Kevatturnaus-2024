@@ -382,11 +382,13 @@ const quarterFinalsGames = [
                       <img
                           src={teams.u8lohkoa.find(team => team.name === game.team1)?.logoUrl}
                           className="team-logo"
+                          alt={game.team1}
             />
                       <td>-</td>
                      <img
                           src={teams.u8lohkob.find(team => team.name === game.team2)?.logoUrl}
                           className="team-logo"
+                          alt={game.team1}
           />
                       <td className="team-name">{game.team2}</td>
                     </tr>

@@ -12,7 +12,6 @@ const TurnausInfo = () => {
   return (
     <div>
       <di className ="introduction">
-            <h3 style={paragraphStyle}> Tervetuloa Sipoon Wolfin U8 ikäluokan jännittävään ja innostavaan itsenäisyysturnaukseen Sipoossa!</h3>
             <div style={paragraphStyle1}>
                <p>Pelit pelataan Sipoon jäähallissa (Urheilutie 2, 04130 Sipoo)</p>
                <p > Voi katsoa pelit ****LeijonatTV linkki****</p>

@@ -26,7 +26,7 @@ html {
 }
 
 .App-header p {
-  margin: 1vw;
+  margin: 0;
   padding: 1vw;
   display: flex;
   align-items: center;
@@ -36,8 +36,7 @@ html {
   display: flex;
   align-items: center;
   background-color:#181a1f;
-  border: 4px double #F0AE2E;
-  border-radius: 10px;
+  
 }
 
 .logo {
@@ -45,7 +44,7 @@ html {
   max-height: 25%; 
   width: auto; /* Allow the logo to adjust its width based on its aspect ratio */
   height: auto; /* Allow the logo to adjust its height based on its aspect ratio */
-  margin: 2vw; /* Adjust as per your spacing preference */
+  margin: 1vw; /* Adjust as per your spacing preference */
   border-radius: 60%; /* Make the border round */
   border: 2px solid #333; /* Add a border */
 }
@@ -55,6 +54,7 @@ html {
   font-weight:bolder;
   padding :  2vw 2vw;
   border-radius: 10px;
+  
 }
 
 .tabs {

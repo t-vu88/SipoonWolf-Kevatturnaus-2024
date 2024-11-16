@@ -9,7 +9,7 @@ html {
 /* Use relative units for padding and margin */
 .App {
   background-color: #181a1f;
-  margin: 8vw 6vw; /* Use viewport width (vw) for margin */
+  margin: 4vw 4vw; /* Use viewport width (vw) for margin */
   color: white;
   position:relative;
 }
@@ -27,7 +27,7 @@ html {
 }
 
 .App-header p {
-  margin: 0;
+  margin: 5px;
   padding: 1vw;
   display: flex;
   align-items: center;
@@ -175,7 +175,7 @@ li {
   display: flex;
   padding-bottom: 20px;
   justify-content: center;
-
+  margin: 5px 0px;
 }
 
 .team {
@@ -183,8 +183,8 @@ li {
   font-size: 18px;
 }
 .team-logo {
-  width: 50px; /* Set the width of the logo */
-  height: 50px; /* Set the height of the logo */
+  width: 45px; /* Set the width of the logo */
+  height: 45px; /* Set the height of the logo */
   /* Add any additional styles as needed */
 }
 .team-divider {

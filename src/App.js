@@ -26,7 +26,7 @@ function App() {
             <Tab label="Turnaus-info" tabName="turnausInfo" currentTab={currentTab} setCurrentTab={setCurrentTab} />
             <Tab label="Lohko A otteluohjelma" tabName="lauantai"  />
             <Tab label="Lohko B otteluohjelma" tabName="sunnuntai" />
-           {/* <Tab label="Pukukopit" tabName="pukukopit" />*/}
+            <Tab label="Pukukopit" tabName="pukukopit" />
             {/*<Tab label="Turnausruokailu" tabName="ruokailu" />*/}
             <Tab label=" Susi Kahvila" tabName="kahvila" />
             <Tab label="Arpajaiset ja onnenpyörä" tabName="arpajaiset" />

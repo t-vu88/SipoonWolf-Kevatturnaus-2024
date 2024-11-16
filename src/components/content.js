@@ -2,7 +2,7 @@ import React from 'react';
 import Lauantai from './lauantai';
 import Sunnuntai from './sunnuntai';
 //import Ruokailu from './Ruokailu';
-//import Pukukopit from './Pukukopit';
+import Pukukopit from './Pukukopit';
 import Kahvila from './Kahvila';
 import Arpajaiset from './Arpajaiset';
 import TurnausInfo from './TurnausInfo';
@@ -19,7 +19,7 @@ const Content = () => {
       {activeTab === 'lauantai' && <Lauantai />}
       {activeTab === 'sunnuntai' && <Sunnuntai />}
       {/*{activeTab === 'ruokailu' && <Ruokailu />}*/}
-      {/*{activeTab === 'pukukopit' && <Pukukopit />}*/}
+      {activeTab === 'pukukopit' && <Pukukopit />}
       {activeTab === 'kahvila' && <Kahvila />}
       {activeTab === 'arpajaiset' && <Arpajaiset />}
     </div>

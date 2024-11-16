@@ -8,8 +8,9 @@ const Lauantai = () => {
     u8lohkoa: [
       { name: "Wolf Musta", logoUrl: "https://files.eliteprospects.com/layout/logos/f667f640-87d9-4879-b248-dde1387fac00_large.png" },
       { name: "KJT Blue", logoUrl: "https://www.kjthockey.fi/wp-content/uploads/2022/06/kjt-hockey-logo-300x123.png" },
-      { name: "Hunters White", logoUrl: "https://static.jopox.fi/hunters/logos/logo-600.png" },
       { name: "EVU", logoUrl: "https://static.jopox.fi/evu/logos/logo-600.png"},
+      { name: "Hunters White", logoUrl: "https://static.jopox.fi/hunters/logos/logo-600.png" },
+      
       { name: "Karhu-kissat Bears", logoUrl: "https://upload.wikimedia.org/wikipedia/fi/thumb/3/3f/Karhu-Kissat.png/360px-Karhu-Kissat.png"},
     ]
   };

@@ -44,7 +44,7 @@ html {
   max-height: 25%; 
   width: auto; /* Allow the logo to adjust its width based on its aspect ratio */
   height: auto; /* Allow the logo to adjust its height based on its aspect ratio */
-  margin: 1vw; /* Adjust as per your spacing preference */
+  margin: 0vw; /* Adjust as per your spacing preference */
   border-radius: 60%; /* Make the border round */
   border: 2px solid #333; /* Add a border */
 }
@@ -182,8 +182,8 @@ li {
   font-size: 18px;
 }
 .team-logo {
-  width: 30px; /* Set the width of the logo */
-  height: 30px; /* Set the height of the logo */
+  width: 50px; /* Set the width of the logo */
+  height: 50px; /* Set the height of the logo */
   /* Add any additional styles as needed */
 }
 .team-divider {

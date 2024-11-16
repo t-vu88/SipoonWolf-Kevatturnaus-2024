@@ -10,7 +10,7 @@ const Lauantai = () => {
       { name: "KJT Blue", logoUrl: "https://www.kjthockey.fi/wp-content/uploads/2022/06/kjt-hockey-logo-300x123.png" },
       { name: "Hunters White", logoUrl: "https://static.jopox.fi/hunters/logos/logo-600.png" },
       { name: "EVU", logoUrl: "https://static.jopox.fi/evu/logos/logo-600.png"},
-      { name: "K-Kissat Bears", logoUrl: "https://upload.wikimedia.org/wikipedia/fi/thumb/3/3f/Karhu-Kissat.png/360px-Karhu-Kissat.png"},
+      { name: "Karhu-kissat Bears", logoUrl: "https://upload.wikimedia.org/wikipedia/fi/thumb/3/3f/Karhu-Kissat.png/360px-Karhu-Kissat.png"},
     ]
   };
   /* you can add the result here, type carefully  */
@@ -18,14 +18,14 @@ const Lauantai = () => {
     u8lohkoa: [
       {id: 1, time: '09:00', team1: 'KJT Blue', team2: 'Wolf Musta', result1: 0, result2: 0 },
       { id: 2, time: '09:30', team1: 'Hunters White', team2: 'EVU', result1: 0, result2: 0},
-      { id: 3, time: '10:00', team1: 'K-Kissat Bears', team2: 'KJT Blue', result1: 0, result2: 0 },
+      { id: 3, time: '10:00', team1: 'Karhu-kissat Bears', team2: 'KJT Blue', result1: 0, result2: 0 },
       { id: 4, time: '10:50', team1: 'Wolf Musta', team2: 'Hunters White', result1: 0, result2: 0 },
-      { id: 5, time: '11:20', team1: 'EVU', team2: 'K-Kissat Bears', result1: 0, result2: 0 },
+      { id: 5, time: '11:20', team1: 'EVU', team2: 'Karhu-kissat Bears', result1: 0, result2: 0 },
       { id: 6, time: '11:50', team1: 'KJT Blue', team2: 'Hunters White', result1: 0, result2: 0 },
       {id: 7, time: '12:40', team1: 'Wolf Musta', team2: 'EVU', result1: 0, result2: 0 },
-      { id: 8, time: '13:10', team1: 'K-Kissat Bears', team2: 'Hunters White', result1: 0, result2: 0},
+      { id: 8, time: '13:10', team1: 'Karhu-kissat Bears', team2: 'Hunters White', result1: 0, result2: 0},
       { id: 9, time: '14:10', team1: 'KJT Blue', team2: 'EVU', result1: 0, result2: 0 },
-      { id: 10, time: '14:40', team1: 'Wolf Musta', team2: 'K-Kissat Bears', result1: 0, result2: 0 }
+      { id: 10, time: '14:40', team1: 'Wolf Musta', team2: 'Karhu-kissat Bears', result1: 0, result2: 0 }
     ]
   };
   

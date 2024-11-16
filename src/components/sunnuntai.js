@@ -9,23 +9,24 @@ const Sunnuntai = () => {
 
     u8lohkob: [
       { name: "Wolf Keltainen", logoUrl:"https://files.eliteprospects.com/layout/logos/f667f640-87d9-4879-b248-dde1387fac00_large.png" },
-      { name: "K-Kissat Cats", logoUrl: "https://upload.wikimedia.org/wikipedia/fi/thumb/3/3f/Karhu-Kissat.png/360px-Karhu-Kissat.png"},
       { name: "KJT White", logoUrl: "https://www.kjthockey.fi/wp-content/uploads/2022/06/kjt-hockey-logo-300x123.png" },
       { name: "Viikingit", logoUrl: "https://upload.wikimedia.org/wikipedia/fi/e/e3/Viikingit_HC_logo.png" },
-      { name: "Hunters Blue", logoUrl: "https://static.jopox.fi/hunters/logos/logo-600.png" }
+      { name: "Hunters Blue", logoUrl: "https://static.jopox.fi/hunters/logos/logo-600.png" },
+      { name: "Karhu-kissat Cats", logoUrl: "https://upload.wikimedia.org/wikipedia/fi/thumb/3/3f/Karhu-Kissat.png/360px-Karhu-Kissat.png"},
+      
     ]
   };
   const games = {
     u8lohkob: [
-      {id: 1, time: '09:00', team1: 'K-Kissat Cats', team2: 'Wolf Keltainen', result1: 0, result2: 0 },
+      {id: 1, time: '09:00', team1: 'Karhu-kissat Cats', team2: 'Wolf Keltainen', result1: 0, result2: 0 },
       { id: 2, time: '09:30', team1: 'KJT White', team2: 'Hunters Blue', result1: 0, result2: 0},
-      { id: 3, time: '10:00', team1: 'Viikingit', team2: 'K-Kissat Cats', result1: 0, result2: 0 },
+      { id: 3, time: '10:00', team1: 'Viikingit', team2: 'Karhu-kissat Cats', result1: 0, result2: 0 },
       { id: 4, time: '10:50', team1: 'Wolf Keltainen', team2: 'KJT White', result1: 0, result2: 0 },
       { id: 5, time: '11:20', team1: 'Hunters Blue', team2: 'Viikingit', result1: 0, result2: 0 },
-      { id: 6, time: '11:50', team1: 'K-Kissat Cats', team2: 'KJT White', result1: 0, result2: 0 },
+      { id: 6, time: '11:50', team1: 'Karhu-kissat Cats', team2: 'KJT White', result1: 0, result2: 0 },
       {id: 7, time: '12:40', team1: 'Wolf Keltainen', team2: 'Hunters Blue', result1: 0, result2: 0 },
       { id: 8, time: '13:10', team1: 'Viikingit', team2: 'KJT White', result1: 0, result2: 0},
-      { id: 9, time: '14:10', team1: 'K-Kissat Cats', team2: 'Hunters Blue', result1: 0, result2: 0 },
+      { id: 9, time: '14:10', team1: 'Karhu-kissat Cats', team2: 'Hunters Blue', result1: 0, result2: 0 },
       { id: 10, time: '14:40', team1: 'Wolf Keltainen', team2: 'Viikingit', result1: 0, result2: 0 }
     ],
   

@@ -18,7 +18,7 @@ const Kahvila = () => {
       
       <h3 style={paragraphStyle}>Tervetuloa herkuttelemaan turnauksen tauolla!</h3>
       <div style={paragraphStyle1}>
-      <p>Turnauskahvio palvelee hallin alakerrassa. Kahviosta voi ostaa lipukkeita arpajaisiin, onnenpyörään, lämäritutkaan ja grillipisteelle.</p>
+      <p>Turnauskahvio palvelee hallin alakerrassa. Kahviosta voi ostaa lipukkeita arpajaisiin, onnenpyörään ja grillipisteelle.</p>
       <p> Kahviossa on myynnissä monipuolisesti makeita ja suolaisia herkkuja mm.</p>
 <table style={{ borderCollapse: 'collapse' }}>
   <thead>

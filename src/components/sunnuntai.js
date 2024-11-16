@@ -90,7 +90,7 @@ const Sunnuntai = () => {
       <div>
           <h1 className='group'>Lohko B</h1>
           <h3 className='group'>(Kellopääty)</h3>
-          {/* Team list for U8 group A */}
+          {/* Team list for U8 group B*/}
           <div className="team-list">
             {teams.u8lohkob.map((team, index) => (
               <React.Fragment key={index}>
@@ -101,6 +101,7 @@ const Sunnuntai = () => {
               </React.Fragment>
             ))}
           </div>
+          <p className='group'></p>
           <div className="tab-buttons-container">
             <button
               onClick={() => handleTabClick('u8lohkoB', 'lohkotilanne')}

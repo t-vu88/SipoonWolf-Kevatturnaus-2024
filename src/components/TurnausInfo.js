@@ -1,11 +1,11 @@
 import React from 'react';
 
 const TurnausInfo = () => {
-  const paragraphStyle = {
+  {/*const paragraphStyle = {
     color: '#F0AE2E', 
     fontSize: '20px',
     textAlign:'center'
-  };
+  };*/}
   const paragraphStyle1 = {
     fontSize:"17px"
   };

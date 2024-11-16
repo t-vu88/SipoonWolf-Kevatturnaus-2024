@@ -3,6 +3,7 @@
 /* Set a default font size for better scalability */
 html {
   font-size: 20px;
+  margin: 5px;
 }
 
 /* Use relative units for padding and margin */

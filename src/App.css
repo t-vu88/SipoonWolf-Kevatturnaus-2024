@@ -63,7 +63,7 @@ html {
   display: flex;
   justify-content: center;
   margin-top: 2rem; /* Use viewport width (vw) for margin */
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .tab-button {
@@ -179,12 +179,12 @@ li {
 }
 
 .team {
-  margin: 0.5vh; /* Adjust as needed */
-  font-size: 18px;
+  margin: 0.7vh; /* Adjust as needed */
+  font-size: 19px;
 }
 .team-logo {
-  width: 45px; /* Set the width of the logo */
-  height: 45px; /* Set the height of the logo */
+  width: 43px; /* Set the width of the logo */
+  height: 43px; /* Set the height of the logo */
   /* Add any additional styles as needed */
 }
 .team-divider {

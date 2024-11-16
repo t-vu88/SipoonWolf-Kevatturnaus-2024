@@ -3,7 +3,7 @@ import React from 'react';
 const Arpajaiset = () => {
   const paragraphStyle = {
     color: 'white', 
-    fontSize: '18px'
+    fontSize: '19px'
   };
   return (
     <div style ={paragraphStyle}>

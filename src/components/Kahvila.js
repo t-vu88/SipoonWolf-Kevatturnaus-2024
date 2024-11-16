@@ -7,7 +7,7 @@ const Kahvila = () => {
     textAlign: 'center'
   };
   const paragraphStyle1 = {
-    fontSize:'18px'
+    fontSize:'19px'
   };
   const cellStyle = {
     border: '1px solid #F0AE2E',

@@ -7,7 +7,7 @@ const TurnausInfo = () => {
     textAlign:'center'
   };*/
   const paragraphStyle1 = {
-    fontSize:"20px"
+    fontSize:"19px"
   };
   return (
     <div>

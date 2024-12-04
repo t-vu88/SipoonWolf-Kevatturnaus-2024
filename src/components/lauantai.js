@@ -87,8 +87,8 @@ const Lauantai = () => {
     <div className="container">
       {/* U8 lohko A */}
       <div>
-        <h1 className='group'>Lohko A</h1>
-        <h2 className='group'> (Lehvosen pääty)</h2>
+        <h1 className='group'>A-lohko</h1>
+        <h3 className='group'> (Lehvosen pääty)</h3>
         {/* Team list for U8 group A */}
         <div className="team-list">
           {teams.u8lohkoa.map((team, index) => (

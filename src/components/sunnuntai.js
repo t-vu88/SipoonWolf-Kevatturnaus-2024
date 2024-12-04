@@ -88,10 +88,9 @@ const Sunnuntai = () => {
 
   return (
     <div className="container">
-  <hr/>
       {/* U8 group B */}
       <div>
-          <h1 className='group'>Lohko B</h1>
+          <h1 className='group'>B-lohko</h1>
           <h3 className='group'>(Kellopääty)</h3>
           {/* Team list for U8 group B*/}
           <div className="team-list">

@@ -14,9 +14,9 @@ function App() {
           <div className="logo-container">
             <img src="https://files.eliteprospects.com/layout/logos/f667f640-87d9-4879-b248-dde1387fac00_large.png" alt="Logo" className="logo" /> {/* Render the logo */}
             <div className="title">
-              <p>  Tervetuloa Wolfin U8</p>
-              <p> itsenäisyysturnaukseen</p>
-              <p> Sipoossa!</p> 
+              <p>  Tervetuloa Sipooseen </p>
+              <p> Wolfin U8 itsenäisyysturnaukseen!</p>
+              <p> </p> 
             </div>
           
           </div>
@@ -29,7 +29,7 @@ function App() {
             <Tab label="Pukukopit" tabName="pukukopit" />
             {/*<Tab label="Turnausruokailu" tabName="ruokailu" />*/}
             <Tab label=" Susi Kahvila" tabName="kahvila" />
-            <Tab label="Arpajaiset ja onnenpyörä" tabName="arpajaiset" />
+            {/*<Tab label="Arpajaiset ja onnenpyörä" tabName="arpajaiset" />*/}
           </div>
           <Content />
         </div>

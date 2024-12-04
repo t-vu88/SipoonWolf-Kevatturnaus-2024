@@ -26,7 +26,7 @@ const TurnausInfo = () => {
 <p> Lopuksi haluamme kiittää lämpimästi tapahtuman sponsoreita, jotka ovat mahdollistaneet tämän upean turnauksen:</p>
 <ul style={{ paddingLeft: '20px', listStyleType: 'disc' }}>
     <li>Prodessendum Oy</li>
-    <li>----</li>
+    <li>Konevel Oy</li>
     </ul>
 
 <p>Lisätietoja turnauksesta ja sen ohjelmasta löydätte yllä olevista välilehdistä.</p>

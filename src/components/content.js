@@ -1,6 +1,6 @@
 import React from 'react';
-import Lauantai from './lauantai';
-import Sunnuntai from './sunnuntai';
+import Alohko from './aLohko';
+import Blohko from './bLohko';
 //import Ruokailu from './Ruokailu';
 import Pukukopit from './Pukukopit';
 import Kahvila from './Kahvila';
@@ -16,9 +16,9 @@ const Content = () => {
   return (
     <div>
       {activeTab === 'turnausInfo' && <TurnausInfo/>}
-      {activeTab === 'lauantai' && <Lauantai />}
-      {activeTab === 'sunnuntai' && <Sunnuntai />}
-      {/*{activeTab === 'ruokailu' && <Ruokailu />}*/}
+      {activeTab === 'aLohko' && <Alohko />}
+      {activeTab === 'bLohko' && < Blohko />}
+            {/*{activeTab === 'ruokailu' && <Ruokailu />}*/}
       {activeTab === 'pukukopit' && <Pukukopit />}
       {activeTab === 'kahvila' && <Kahvila />}
       {/*{activeTab === 'arpajaiset' && <Arpajaiset />}*/}

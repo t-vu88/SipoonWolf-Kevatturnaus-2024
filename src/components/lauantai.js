@@ -20,9 +20,9 @@ const Lauantai = () => {
       {id: 1, time: '09:00', team1: 'KJT Blue', team2: 'Wolf Musta', result1: 0, result2: 0 },
       { id: 2, time: '09:30', team1: 'Hunters White', team2: 'EVU', result1: 0, result2: 0},
       { id: 3, time: '10:00', team1: 'Karhu-kissat Bears', team2: 'KJT Blue', result1: 0, result2: 0 },
-      { id: 4, time: '10:50', team1: 'Wolf Musta', team2: 'Hunters White', result1: 0, result2: 0 },
-      { id: 5, time: '11:20', team1: 'EVU', team2: 'Karhu-kissat Bears', result1: 0, result2: 0 },
-      { id: 6, time: '11:50', team1: 'KJT Blue', team2: 'Hunters White', result1: 0, result2: 0 },
+      { id: 4, time: '10:50', team1: 'Hunters White', team2: 'Wolf Musta', result1: 0, result2: 0 },
+      { id: 5, time: '11:20', team1: 'Karhu-kissat Bears', team2: 'EVU', result1: 0, result2: 0 },
+      { id: 6, time: '11:50', team1: 'Hunters White', team2: 'KJT Blue', result1: 0, result2: 0 },
       {id: 7, time: '12:40', team1: 'Wolf Musta', team2: 'EVU', result1: 0, result2: 0 },
       { id: 8, time: '13:10', team1: 'Karhu-kissat Bears', team2: 'Hunters White', result1: 0, result2: 0},
       { id: 9, time: '14:10', team1: 'KJT Blue', team2: 'EVU', result1: 0, result2: 0 },
@@ -157,7 +157,7 @@ const Lauantai = () => {
             <div className="game-info" key={game.id}>
               <div className="game-row" style={{ paddingTop:'15px' , paddingBottom: '5px' }}>Klo {game.time}</div>
               <div className="game-row" style={{ paddingBottom: '15px', fontSize: '0.8rem' }}>
-                  (Kellopääty)
+                  (Lehvosen pääty)
               </div>
               <div className="game-row" style={{ paddingBottom: '15px' }} >
                 <table>

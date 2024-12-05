@@ -22,7 +22,7 @@ const Sunnuntai = () => {
     u8lohkob: [
       {id: 1, time: '09:00', team1: 'Karhu-kissat Cats', team2: 'Wolf Keltainen', result1: 0, result2: 0 },
       { id: 2, time: '09:30', team1: 'Hunters Blue', team2: 'KJT White', result1: 0, result2: 0},
-      { id: 3, time: '10:00', team1: 'Karhu-kissats Cats', team2: 'Viikingit', result1: 0, result2: 0 },
+      { id: 3, time: '10:00', team1: 'Karhu-kissat Cats', team2: 'Viikingit', result1: 0, result2: 0 },
       { id: 4, time: '10:50', team1: 'Wolf Keltainen', team2: 'KJT White', result1: 0, result2: 0 },
       { id: 5, time: '11:20', team1: 'Hunters Blue', team2: 'Viikingit', result1: 0, result2: 0 },
       { id: 6, time: '11:50', team1: 'Karhu-kissat Cats', team2: 'KJT White', result1: 0, result2: 0 },

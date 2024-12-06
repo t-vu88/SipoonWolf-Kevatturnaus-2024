@@ -27,7 +27,7 @@ const Blohko = () => {
       { id: 5, time: '11:20', team1: 'Hunters Blue', team2: 'Viikingit', result1: 18, result2: 1 },
       { id: 6, time: '11:50', team1: 'Karhu-kissat Cats', team2: 'KJT White', result1: 0, result2: 15 },
       {id: 7, time: '12:40', team1: 'Wolf Keltainen', team2: 'Hunters Blue', result1: 2, result2: 6},
-      { id: 8, time: '13:10', team1: 'Viikingit', team2: 'KJT White', result1: 0, result2: 0},
+      { id: 8, time: '13:10', team1: 'Viikingit', team2: 'KJT White', result1: 0, result2: 21},
       { id: 9, time: '14:10', team1: 'Karhu-kissat Cats', team2: 'Hunters Blue', result1: 0, result2: 0 },
       { id: 10, time: '14:40', team1: 'Wolf Keltainen', team2: 'Viikingit', result1: 0, result2: 0 }
     ],

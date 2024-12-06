@@ -24,7 +24,7 @@ const Alohko = () => {
       { id: 5, time: '11:20', team1: 'Karhu-kissat Bears', team2: 'EVU', result1: 1, result2: 9 },
       { id: 6, time: '11:50', team1: 'Hunters White', team2: 'KJT Blue', result1: 2, result2: 4},
       {id: 7, time: '12:40', team1: 'Wolf Musta', team2: 'EVU', result1: 8, result2: 3 },
-      { id: 8, time: '13:10', team1: 'Karhu-kissat Bears', team2: 'Hunters White', result1: 0, result2: 0},
+      { id: 8, time: '13:10', team1: 'Karhu-kissat Bears', team2: 'Hunters White', result1: 0, result2: 10},
       { id: 9, time: '14:10', team1: 'KJT Blue', team2: 'EVU', result1: 0, result2: 0 },
       { id: 10, time: '14:40', team1: 'Wolf Musta', team2: 'Karhu-kissat Bears', result1: 0, result2: 0 }
     ]

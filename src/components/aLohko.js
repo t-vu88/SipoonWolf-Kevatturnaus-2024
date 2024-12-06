@@ -18,7 +18,7 @@ const Alohko = () => {
   const games = {
     u8lohkoa: [
       {id: 1, time: '09:00', team1: 'KJT Blue', team2: 'Wolf Musta', result1: 4, result2: 7 },
-      { id: 2, time: '09:30', team1: 'Hunters White', team2: 'EVU', result1: 0, result2: 0},
+      { id: 2, time: '09:30', team1: 'Hunters White', team2: 'EVU', result1: 8, result2: 3},
       { id: 3, time: '10:00', team1: 'Karhu-kissat Bears', team2: 'KJT Blue', result1: 0, result2: 0 },
       { id: 4, time: '10:50', team1: 'Hunters White', team2: 'Wolf Musta', result1: 0, result2: 0 },
       { id: 5, time: '11:20', team1: 'Karhu-kissat Bears', team2: 'EVU', result1: 0, result2: 0 },
